@@ -1,0 +1,143 @@
+html {
+  font-size: 62.5%; }
+
+div.card figure img {
+  max-width: 100%;
+  height: auto; }
+div.card div.card-body p {
+  font-size: 1rem;
+  color: #333; }
+
+/*----------------------------------------------------------------*\
+		MAIN NAV
+\*----------------------------------------------------------------*/
+nav.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border-bottom: 3px solid #252525;
+  width: 100%; }
+  nav.main-nav > div:first-child > ul {
+    background: #EFEADF;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 6rem;
+    bottom: 0;
+    width: 0;
+    z-index: -1;
+    list-style-type: none;
+    margin: 0; }
+    @media screen and (min-width: 768px) {
+      nav.main-nav > div:first-child > ul {
+        display: flex;
+        position: static;
+        width: auto;
+        background: none;
+        z-index: 3; } }
+    @media screen and (min-width: 1024px) {
+      nav.main-nav > div:first-child > ul {
+        padding-right: 10rem; } }
+    nav.main-nav > div:first-child > ul > li {
+      border-bottom: 1px solid #252525;
+      margin: 0 3rem;
+      padding: 1rem 0; }
+      nav.main-nav > div:first-child > ul > li.active a {
+        color: #2E81BB; }
+      @media screen and (min-width: 768px) {
+        nav.main-nav > div:first-child > ul > li {
+          border: none;
+          margin: 0;
+          padding: 0;
+          line-height: normal;
+          line-height: 4rem; } }
+      nav.main-nav > div:first-child > ul > li > a {
+        text-decoration: none;
+        font-size: 4rem; }
+        @media screen and (min-width: 768px) {
+          nav.main-nav > div:first-child > ul > li > a {
+            margin: 0 1.5rem;
+            font-size: 2rem; } }
+        @media screen and (min-width: 1200px) {
+          nav.main-nav > div:first-child > ul > li > a {
+            margin: 0 2.5rem;
+            padding: 0 1rem; } }
+  nav.main-nav > div:last-child {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-left: 1px solid #CCC8BE; }
+    nav.main-nav > div:last-child > div {
+      width: 32px;
+      height: 23px;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out; }
+      nav.main-nav > div:last-child > div > span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #252525;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out; }
+        nav.main-nav > div:last-child > div > span:nth-child(1) {
+          top: 0;
+          transform-origin: left center; }
+        nav.main-nav > div:last-child > div > span:nth-child(2) {
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          transform-origin: left center; }
+        nav.main-nav > div:last-child > div > span:nth-child(3) {
+          bottom: 0;
+          transform-origin: left center; }
+      nav.main-nav > div:last-child > div.open > span:nth-child(1) {
+        transform: rotate(45deg);
+        top: -3px;
+        left: 8px; }
+      nav.main-nav > div:last-child > div.open > span:nth-child(2) {
+        width: 0%;
+        opacity: 0; }
+      nav.main-nav > div:last-child > div.open > span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 20px;
+        left: 8px; }
+
+.hero-slider {
+  margin-top: 7rem; }
+  .hero-slider > div {
+    position: relative; }
+    .hero-slider > div > img.bg-image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1; }
+    .hero-slider > div > span {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #426ff2;
+      background: linear-gradient(90deg, rgba(66, 111, 242, 0.7399334734) 35%, #6907b3 100%);
+      z-index: 2; }
+    .hero-slider > div > div.grid {
+      display: grid;
+      grid-template-columns: 0.7fr 1fr;
+      position: relative;
+      z-index: 3; }
+      .hero-slider > div > div.grid > div {
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white; }
+
+/*# sourceMappingURL=main.css.map */

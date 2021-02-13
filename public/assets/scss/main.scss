@@ -1,0 +1,47 @@
+//Variables(Colors)
+$white: #fff;
+$dark: #252525;
+$red: #E8392D;
+$gray: #9A9A9A;
+$black: #252525;
+$soft-gray:#FBF8F1;
+$dark-gray:#757474;
+$gray-dots:#CCC8BE;
+$sky-blue: #2E81BB;
+$gray-bg-soft:#F5F2EB;
+$vintage-yellow: #FFFEF9;
+$vintage-gray: #EFEADF;
+$transparent-black: rgba(0,0,0,0.5);
+$soft-shadow-inside: 0 0px 25px 0 rgba(0,0,0,0.2);
+
+//Medias Query
+$mobile-small-BP: 400px;
+$mobile-BP: 640px;
+$tablet-BP: 768px;
+$desktop-BP: 1024px;
+$desktop-big-BP: 1200px;
+$desktop-extra-big-BP: 1450px;
+$desktop-max-big-BP: 1600px;
+
+html {
+	font-size: 62.5%;    
+}
+
+
+//Fragments
+@import 'fragments/animations.scss';
+@import 'fragments/buttons.scss';
+@import 'fragments/typography.scss';
+@import 'fragments/card.scss';
+
+//Navigation
+@import 'navigation/main-footer.scss';
+@import 'navigation/main-nav.scss';
+
+//HeroSlider
+@import 'components/hero/hero-slider.scss';
+
+
+
+
+

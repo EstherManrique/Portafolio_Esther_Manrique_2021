@@ -1,0 +1,16 @@
+div.card {
+  figure {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  div {
+    &.card-body {
+      p {
+        font-size: 1rem;
+        color: #333;
+      }
+    }
+  }
+}

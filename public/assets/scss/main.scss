@@ -23,11 +23,6 @@ $desktop-big-BP: 1200px;
 $desktop-extra-big-BP: 1450px;
 $desktop-max-big-BP: 1600px;
 
-html {
-	font-size: 62.5%;    
-}
-
-
 //Fragments
 @import 'fragments/animations.scss';
 @import 'fragments/buttons.scss';
@@ -42,6 +37,12 @@ html {
 @import 'components/hero/hero-slider.scss';
 
 
+html {
+	font-size: 62.5%;    
+}
 
+body {
+font-family: $ff-sans-serif;
+}
 
 

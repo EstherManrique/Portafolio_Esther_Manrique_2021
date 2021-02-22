@@ -22,13 +22,12 @@ const HeroSlider = () => {
 
             <div className="grid">
               <div className="name">
-                <h1>Esther</h1>
-                <h1>Manrique González</h1>
-                <h2>Front End Developer</h2>
+                <h1>Esther Manrique</h1>
+                <h4>Front End Developer</h4>
               </div>
 
               <div className="heroImage">
-                <img src="/assets/images/User.jpg" alt="photographie portfolio"/>
+                <img src="/assets/images/EM_1.jpg" alt="photographie portfolio" className="foto"/>
               </div>
             </div>
           </div>
@@ -42,7 +41,7 @@ const HeroSlider = () => {
             <h2 className="about-me-title">About Me</h2>
 
             <p className="about-me-content">
-              Soy apasionada por naturaleza propia, entre las cosas que más me apasionan en la vida, una de ellas es la programación, el diseño, desarrollo de software y páginas web.
+              Soy apasionada por naturaleza propia, entre las cosas que más me gustan en la vida, una de ellas es la programación, el diseño, desarrollo de software y páginas web.
               Me encantan los retos, pero lo que más disfruto de ellos, es la busqueda y el logro de su correcta solución.
               Me gusta perseguir mis sueños, lograr mis metas y pienso que no hay limites, sólo existen los que uno mismo se impone.....
             

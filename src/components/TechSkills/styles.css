@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 3rem;
+	margin-top: 100px;
+}
+
+.tech-skills {
+	background: linear-gradient(to left, #5b00a0, #9175d3);
+	-webkit-background-clip: text;
+		color: transparent;
+	/* background-color: linear-gradient(to left, #5b00a0, #9175d3); */
+}
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	height: 30px;
+	width: 500px;
+}
+
+.progress-done {
+	background: linear-gradient(to left, #5b00a0, #9175d3);
+	box-shadow: 0 3px 3px -5px #5b00a0, 0 2px 5px #5b00a0;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 2s ease 0.3s;
+}

@@ -41,25 +41,39 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
             color: white;
+
           }
   
           & > div { 
             & > img {
+              display: flex;
+              align-self: flex-start;
               width: 50%;
-              height: 50%;
+              height: 60%;
               object-fit: contain;
-  
+              border-radius: 50%;
             }
           }
         }
-  
+
+        h1 {
+
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          margin-bottom: -35px;
+        }
+
+        h4 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: lighter;
+        }
       }
     }
 
     &.hero-slick-second {
-          /* grid-template-columns: auto 3fr; */
+          grid-template-columns: auto 3fr;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;

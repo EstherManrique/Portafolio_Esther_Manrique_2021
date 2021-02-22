@@ -8,7 +8,8 @@ const MainNav = () => {
           <ul id="js-menu">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./sobre_mi.html">Sobre Mí</a></li>
-            <li><a href="./portafolio.html">Portafolio</a></li>
+            <li><a href="./tech_skills.html">Tech Skills</a></li>
+            <li><a href="./soft_skills.html">Soft Skills</a></li>
             <li><a href="./proyectos.html">Proyectos</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
           </ul>

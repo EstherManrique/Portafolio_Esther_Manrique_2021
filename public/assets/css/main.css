@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500&display=swap");
 div.card figure img {
   max-width: 100%;
   height: auto; }
@@ -136,14 +136,24 @@ nav.main-nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         color: white; }
       .hero-slider div.hero-slick.hero-slick-first > div.grid > div > img {
+        display: flex;
+        align-self: flex-start;
         width: 50%;
-        height: 50%;
-        object-fit: contain; }
+        height: 60%;
+        object-fit: contain;
+        border-radius: 50%; }
+    .hero-slider div.hero-slick.hero-slick-first > div h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      margin-bottom: -35px; }
+    .hero-slider div.hero-slick.hero-slick-first > div h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: lighter; }
     .hero-slider div.hero-slick.hero-slick-second {
-      /* grid-template-columns: auto 3fr; */
+      grid-template-columns: auto 3fr;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;

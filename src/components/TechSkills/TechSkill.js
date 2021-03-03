@@ -21,10 +21,6 @@ const TechSkill = ({ done }) => {
           <div className="progress-done" style={style}>{done}%</div>
         </div>
       </div>
-
-
-
-
     </Fragment>
   )
 }

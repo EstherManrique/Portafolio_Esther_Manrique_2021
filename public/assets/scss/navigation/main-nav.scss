@@ -15,7 +15,7 @@ nav.main-nav {
   & > div {
     &:first-child {
       & > ul {
-        background: $vintage-gray;
+        background: $white;
         padding: 0;
         position: fixed;
         right: 0;
@@ -38,7 +38,7 @@ nav.main-nav {
         & > li {
           &.active {
             a {
-              color: $sky-blue;
+              color: $purple-dark;
             }
           }
           border-bottom: 1px solid $dark;
@@ -72,7 +72,7 @@ nav.main-nav {
       display: flex;
       align-items: center;
       padding: 0 2rem;
-      border-left: 1px solid $gray-dots;
+      border-left: 1px solid $gray-soft;
       & > div {
         width: 32px;
         height: 23px;

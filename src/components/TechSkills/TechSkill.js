@@ -1,9 +1,6 @@
 import React, { Fragment, useState } from 'react'
-import './styles.css';
 
-
-
-const TechSkill = ({ done }) => {
+const TechSkill = ({ done, name }) => {
   const [style, setStyle] = useState({});
 
   setTimeout(() => {
@@ -16,7 +13,8 @@ const TechSkill = ({ done }) => {
   }, 1000);
   return (
     <Fragment>
-      <div className="container" >
+      <div className="container">
+        <div className="tech-name">{name}</div>
         <div className="progress">
           <div className="progress-done" style={style}>{done}%</div>
         </div>

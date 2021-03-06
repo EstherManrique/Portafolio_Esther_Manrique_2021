@@ -18,7 +18,11 @@ const HeroSlider = () => {
         <Slider {...settings}>
           <div>
             <div className="hero-slick hero-slick-first">
-              <img src="/assets/images/coding.png"  className="bg-image" alt="photographie of computer"/> 
+              <picture>
+                <source srcset="/assets/images/coding.png" media="(min-width: 1024px)" />
+                <source srcset="/assets/images/coding-tablet.png" media="(min-width: 768px)" />
+                <img src="/assets/images/coding-mobile.png" alt="logo" />
+              </picture>
               <span className="bg-gradient"></span>
               <div className="grid">
                 <div className="name">
@@ -33,14 +37,18 @@ const HeroSlider = () => {
           </div>
           <div>
             <div className="hero-slick hero-slick-second">
-              <img src="/assets/images/laptop-wall.png"  className="bg-image" alt="photographie of computer"/> 
+            <picture>
+                <source srcset="/assets/images/laptop-wall.png" media="(min-width: 1024px)" />
+                <source srcset="/assets/images/laptop-wall-tablet.png" media="(min-width: 768px)" />
+                <img src="/assets/images/laptop-wall-mobile.png" alt="logo" />
+              </picture>
               <span className="bg-gradient"></span>
               <div className="about-me-wrapper">
                 <h2 className="about-me-title">About Me</h2>
                 <p className="about-me-content">
                   Soy apasionada por naturaleza propia, entre las cosas que más me gustan en la vida, una de ellas es la programación, el diseño, desarrollo de software y páginas web.
                   Me encantan los retos, pero lo que más disfruto de ellos, es la busqueda y el logro de su correcta solución.
-                  Me gusta perseguir mis sueños, lograr mis metas y pienso que no hay limites, sólo existen los que uno mismo se impone.....
+                  Me gusta perseguir mis sueños, lograr mis metas y pienso que no hay limites, sólo existen los que uno mismo se impone...
                 </p>
               </div>
             </div>

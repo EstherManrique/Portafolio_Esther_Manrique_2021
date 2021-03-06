@@ -1,0 +1,44 @@
+.tech-skills {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto;
+  .tech-skills-title {
+    background: linear-gradient(to left, $purple-dark, $purple-soft);
+    background-clip: text;
+    color: transparent;
+    background-color: linear-gradient(to left, $purple-dark, $purple-soft);
+  }
+  .container {
+    h1 {
+      font-size: 3rem;
+      margin-top: 100px;
+    }
+    .tech-name {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: .5rem;
+    }
+    .progress {
+      background-color: $gray-soft;
+      border-radius: 20px;
+      height: 25px;
+      margin-bottom: 1rem;
+      .progress-done {
+        background: linear-gradient(to left, $purple-dark, $purple-soft);
+        border-radius: 20px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 0;
+        opacity: 0;
+        transition: 2s ease 0.3s;
+      }
+    }
+  }
+}
+
+
+
+

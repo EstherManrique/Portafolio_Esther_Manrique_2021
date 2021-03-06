@@ -2,22 +2,51 @@ import React, { Fragment } from 'react'
 import TechSkill from './TechSkill'
 
 const TechSkills = () => {
+  const skills = [
+    {
+      'name': 'HTML',
+      'percentaje': 90
+    },
+    {
+      'name':'CSS',
+      'percentaje': 70
+    },
+    {
+      'name':'Javascript',
+      'percentaje': 50},
+    {
+      'name':'React',
+      'percentaje': 50},
+    {
+      'name':'Vue',
+      'percentaje': 35},
+    {
+      'name':'Bootstrap',
+      'percentaje': 75},
+    {
+      'name':'Materialize/Material UI',
+      'percentaje': 50},
+    {
+      'name':'Git',
+      'percentaje': 60},
+    {
+      'name':'Firebase',
+      'percentaje': 50},
+    {
+      'name':'Figma',
+      'percentaje': 70},
+    {
+      'name':'Trello',
+      'percentaje': 70}
+  ];
   return (
     <Fragment>
-      <div className="container">
-        <h1 className="tech-skills">Tech Skills</h1>
-        <h2>HTML</h2>
-        <TechSkill done="90" />
-        <h2>CSS</h2>
-        <TechSkill done="70" />
-        <h2>Javascript</h2>
-        <TechSkill done="50" />
-        <h2>React</h2>
-        <TechSkill done="50" />
-        <h2>Vue</h2>
-        <TechSkill done="35" />
-        <h2>Bootstrap</h2>
-        <TechSkill done="75" />
+      <div className="tech-skills">
+        <h1 className="tech-skills-title">Tech Skills</h1>
+        { skills.map((skill) => 
+
+        <TechSkill done={skill.percentaje} name={skill.name} />
+        )}
       </div>
     </Fragment>
       

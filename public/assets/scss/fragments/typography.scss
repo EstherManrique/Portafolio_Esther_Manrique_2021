@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500&display=swap');
+$ff-poppins: 'Poppins', sans-serif;
 
-
-
-$ff-sans-serif: 'Roboto', sans-serif; //all
-$ff-poppins: 'Poppins', sans-serif; //titles
+h1 {
+  font-size: 2rem;
+  @media screen and (min-width: $tablet-BP) {
+    font-size: 2.5rem;
+  }
+  @media screen and (min-width: $desktop-BP) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: $desktop-big-BP) {
+    font-size: 4rem;
+  }
+}

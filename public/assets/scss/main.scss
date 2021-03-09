@@ -3,6 +3,7 @@ $white: #fff;
 $dark: #333333;
 $green:#a3bd31;
 $purple-soft: #8336b4;
+$purple-soft-soft: #ab0bb9;
 $purple-dark: #5514a5;
 $gray-soft: #dcdcdc;
 $purple-dark-rgb: rgba(85, 20, 165, 0.7);
@@ -16,6 +17,9 @@ $desktop-BP: 1024px;
 $desktop-big-BP: 1200px;
 $desktop-extra-big-BP: 1450px;
 $desktop-max-big-BP: 1600px;
+
+// Normalize
+@import 'vendor/normalize.scss';
 
 //Fragments
 @import 'fragments/animations.scss';
@@ -36,13 +40,10 @@ $desktop-max-big-BP: 1600px;
 //Vendor
 @import 'vendor/animations.scss';
 
-
 html {
-	font-size: 62.5%;    
+	font-size: 62.5%;
 }
 
 body {
-font-family: $ff-sans-serif;
+	font-family: $ff-poppins;
 }
-
-

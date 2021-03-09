@@ -1,16 +1,62 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
 import Slider from "react-slick";
+import { gsap, TimelineMax } from "gsap";
+import TextPlugin from "gsap/TextPlugin";
 
+gsap.registerPlugin(TextPlugin);
 
 const HeroSlider = () => {
   const settings = {
     dots: true,
     fade: true,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    appendDots: dots => <div className="slider-home-dots" aria-label="dots slider change image"><ul>{dots}</ul></div>
+    appendDots: dots => <div className="slider-home-dots" aria-label="dots slider change image"><ul>{dots}</ul></div>,
+    beforeChange: (oldIndex, newIndex) => {
+      const image = document.querySelector('#photo');
+      if(oldIndex === 0){
+        gsap.fromTo(image,
+          {
+            autoAlpha: 1
+          },
+          {
+            autoAlpha: 0,
+            duration: 2
+          }
+        );
+      }
+      if(oldIndex === 1){
+        gsap.fromTo(image,
+          {
+            autoAlpha: 0
+          },
+          {
+            autoAlpha: 1,
+            duration: 2
+          }
+        );
+      }
+    },
+    
+    onInit: () => {
+      const name = document.getElementById('name');
+      var tl = new TimelineMax({repeat:-1, yoyo:false, repeatDelay:0});
+      tl.to(name, 2, {text:{value:"FrontEnd Developer"},delay:2});
+      tl.to(name, 2, {text:{value:"Esther Manrique"},delay:4});
+
+      const image = document.querySelector('#photo');
+      gsap.fromTo(image,
+        {
+          autoAlpha: 0
+        },
+        {
+          autoAlpha: 1,
+          duration:4
+        }
+      );
+    }
   };
   return (
     <Fragment>
@@ -19,18 +65,18 @@ const HeroSlider = () => {
           <div>
             <div className="hero-slick hero-slick-first">
               <picture>
-                <source srcset="/assets/images/coding.png" media="(min-width: 1024px)" />
-                <source srcset="/assets/images/coding-tablet.png" media="(min-width: 768px)" />
+                <source srcSet="/assets/images/coding.png" media="(min-width: 1024px)" />
+                <source srcSet="/assets/images/coding-tablet.png" media="(min-width: 768px)" />
                 <img src="/assets/images/coding-mobile.png" alt="logo" />
               </picture>
               <span className="bg-gradient"></span>
               <div className="grid">
                 <div className="name">
-                  <h1>Esther Manrique</h1>
-                  <h4>Front End Developer</h4>
+                  <h1 id="name">Esther Manrique</h1>
+                  <h4>&lt;Laboratoria&gt;</h4>
                 </div>
                 <div className="heroImage">
-                  <img src="/assets/images/EM_1.jpg" alt="photographie portfolio" className="foto"/>
+                  <img src="/assets/images/EM_1.jpg" alt="photographie portfolio" className="foto" id="photo"/>
                 </div>
               </div>
             </div>
@@ -38,8 +84,8 @@ const HeroSlider = () => {
           <div>
             <div className="hero-slick hero-slick-second">
             <picture>
-                <source srcset="/assets/images/laptop-wall.png" media="(min-width: 1024px)" />
-                <source srcset="/assets/images/laptop-wall-tablet.png" media="(min-width: 768px)" />
+                <source srcSet="/assets/images/laptop-wall.png" media="(min-width: 1024px)" />
+                <source srcSet="/assets/images/laptop-wall-tablet.png" media="(min-width: 768px)" />
                 <img src="/assets/images/laptop-wall-mobile.png" alt="logo" />
               </picture>
               <span className="bg-gradient"></span>

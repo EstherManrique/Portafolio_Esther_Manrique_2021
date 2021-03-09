@@ -44,8 +44,7 @@ const TechSkills = () => {
       <div className="tech-skills">
         <h1 className="tech-skills-title">Tech Skills</h1>
         { skills.map((skill) => 
-
-        <TechSkill done={skill.percentaje} name={skill.name} />
+          <TechSkill key={skill.name} done={skill.percentaje} name={skill.name} />
         )}
       </div>
     </Fragment>

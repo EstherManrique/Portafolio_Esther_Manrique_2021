@@ -42,7 +42,7 @@
             gap: 0 8rem;
           }
   
-          & > div { 
+          & > div {
             font-size: 2.5rem;
             color: white;
             text-align: center;
@@ -58,7 +58,45 @@
               }
             }
 
-            & > img {
+            & > img { //DE AQUI
+                animation: fadein 15s;
+                -moz-animation: fadein 2s; /* Firefox */
+                -webkit-animation: fadein 15s; /* Safari and Chrome */
+                -o-animation: fadein 2s; /* Opera */
+            
+            @keyframes fadein {
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:5;
+                }
+            }
+            @-moz-keyframes fadein { /* Firefox */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-webkit-keyframes fadein { /* Safari and Chrome */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-o-keyframes fadein { /* Opera */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity: 1;
+                }
+            } //HASTA AQUI
+
               @media screen and (min-width: $tablet-BP) {
                 transform: rotate(5deg);              
                 box-shadow: -25px 25px 25px rgba(0, 0, 0, 0.3);
@@ -68,7 +106,7 @@
               @media screen and (min-width: $desktop-big-BP) {
                 max-width: none;
               }
-            }
+            }  
           }
         }
 
@@ -124,7 +162,7 @@
           font-size: 2.5rem;
           margin: 3rem 0 0 0;
         }
-      }  
+      }
     }
 
     &:last-child {

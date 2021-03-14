@@ -14,7 +14,7 @@ const HeroSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     appendDots: dots => <div className="slider-home-dots" aria-label="dots slider change image"><ul>{dots}</ul></div>,
-    beforeChange: (oldIndex, newIndex) => {
+    /* beforeChange: (oldIndex, newIndex) => {
       const image = document.querySelector('#photo');
       if(oldIndex === 0){
         gsap.fromTo(image,
@@ -38,7 +38,7 @@ const HeroSlider = () => {
           }
         );
       }
-    },
+    },*/
     
     onInit: () => {
       const name = document.getElementById('name');
@@ -53,10 +53,10 @@ const HeroSlider = () => {
         },
         {
           autoAlpha: 1,
-          duration:4
+          duration: 4
         }
       );
-    }
+    } 
   };
   return (
     <Fragment>

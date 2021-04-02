@@ -511,13 +511,6 @@ nav.main-nav {
   width: 90%;
   max-width: 50rem;
   margin: 0 auto; }
-  .tech-skills .tech-skills-title {
-    background: linear-gradient(to left, #5514a5, #ab0bb9);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 4rem;
-    text-align: center; }
   .tech-skills .container h1 {
     font-size: 3rem;
     margin-top: 100px; }
@@ -542,11 +535,75 @@ nav.main-nav {
       opacity: 0;
       transition: 2s ease 0.3s; }
 
+div.projects .project-item.bg-gray {
+  background: #dcdcdc; }
+div.projects .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; }
+div.projects .project-tech {
+  display: flex;
+  align-items: center; }
+  div.projects .project-tech h4 {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  div.projects .project-tech .project-tech-list {
+    font-size: 1.5rem;
+    color: #5514a5;
+    margin-left: 1.5rem;
+    font-weight: bold; }
+
 @keyframes move {
   0% {
     transform: translateY(0); }
   100% {
     transform: translateY(-1rem); } }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.gradient-title {
+  background: linear-gradient(to left, #5514a5, #ab0bb9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  text-align: center; }
+
+ul.is-inline {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row; }
+
+/* ol, ul {
+	padding: 0;
+	margin: 0;
+	li {
+		padding: 0;
+		margin: 0;
+	}	
+} */
+h3 {
+  font-size: 3rem;
+  color: #333333; }
+
+h4 {
+  font-size: 2.2rem;
+  color: #333333;
+  font-weight: normal; }
+
+.is-green {
+  color: #a3bd31; }
+
+p, li {
+  font-size: 1.6rem; }
+
+.text-centered {
+  text-align: center; }
+
 html {
   font-size: 62.5%; }
 

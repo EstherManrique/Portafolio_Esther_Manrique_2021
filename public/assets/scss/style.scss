@@ -1,0 +1,56 @@
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.gradient-title {
+	background: linear-gradient(to left, $purple-dark, $purple-soft-soft);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 5rem;
+	text-align: center;
+}
+
+ul {
+	&.is-inline {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+/* ol, ul {
+	padding: 0;
+	margin: 0;
+	li {
+		padding: 0;
+		margin: 0;
+	}	
+} */
+
+h3 {
+	font-size: 3rem;
+	color: $dark;
+}
+
+h4 {
+	font-size: 2.2rem;
+	color: $dark;
+	font-weight: normal;
+}
+
+.is-green {
+	color: $green;
+}
+
+p, li {
+	font-size: 1.6rem;
+}
+
+.text-centered {
+	text-align: center;
+}

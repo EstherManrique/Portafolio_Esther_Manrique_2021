@@ -19,26 +19,32 @@ $desktop-extra-big-BP: 1450px;
 $desktop-max-big-BP: 1600px;
 
 // Normalize
-@import 'vendor/normalize.scss';
+@import './vendor/normalize.scss';
 
 //Fragments
-@import 'fragments/animations.scss';
-@import 'fragments/buttons.scss';
-@import 'fragments/typography.scss';
-@import 'fragments/card.scss';
+@import './fragments/animations.scss';
+@import './fragments/buttons.scss';
+@import './fragments/typography.scss';
+@import './fragments/card.scss';
 
 //Navigation
-@import 'navigation/main-footer.scss';
-@import 'navigation/main-nav.scss';
+@import './navigation/main-footer.scss';
+@import './navigation/main-nav.scss';
 
 //HeroSlider
-@import 'components/hero/hero-slider.scss';
+@import './components/hero/hero-slider.scss';
 
 // Tech skills
-@import 'components/tech-skills/tech-skills.scss';
+@import './components/tech-skills/tech-skills.scss';
+
+// Projects
+@import './components/projects/projects.scss';
 
 //Vendor
-@import 'vendor/animations.scss';
+@import './vendor/animations.scss';
+
+//General styles
+@import './style.scss';
 
 html {
 	font-size: 62.5%;
@@ -47,3 +53,4 @@ html {
 body {
 	font-family: $ff-poppins;
 }
+

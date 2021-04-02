@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const MainNav = () => {
   return (
@@ -7,10 +8,15 @@ const MainNav = () => {
         <div>
           <ul id="js-menu">
             <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./sobre_mi.html">Sobre Mí</a></li>
-            <li><a href="./tech_skills.html">Tech Skills</a></li>
+
+              <li>
+                <Link to="tech-skills">Tech Skills</Link>
+              </li>
             <li><a href="./soft_skills.html">Soft Skills</a></li>
-            <li><a href="./proyectos.html">Proyectos</a></li>
+              <li>
+                <Link to="projects">Proyectos</Link>
+              </li>
+
             <li><a href="./contacto.html">Contacto</a></li>
           </ul>
         </div>

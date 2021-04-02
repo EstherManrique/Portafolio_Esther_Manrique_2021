@@ -13,6 +13,9 @@ const HeroSlider = () => {
     speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
     appendDots: dots => <div className="slider-home-dots" aria-label="dots slider change image"><ul>{dots}</ul></div>,
     /* beforeChange: (oldIndex, newIndex) => {
       const image = document.querySelector('#photo');
@@ -43,19 +46,8 @@ const HeroSlider = () => {
     onInit: () => {
       const name = document.getElementById('name');
       var tl = new TimelineMax({repeat:-1, yoyo:false, repeatDelay:0});
-      tl.to(name, 2, {text:{value:"FrontEnd Developer"},delay:2});
-      tl.to(name, 2, {text:{value:"Esther Manrique"},delay:4});
-
-      const image = document.querySelector('#photo');
-      gsap.fromTo(image,
-        {
-          autoAlpha: 0
-        },
-        {
-          autoAlpha: 1,
-          duration: 4
-        }
-      );
+      tl.to(name, 2, {text:{value:"FrontEnd Developer"},delay:5});
+      tl.to(name, 2, {text:{value:"Esther Manrique"},delay:2});
     } 
   };
   return (
@@ -82,7 +74,7 @@ const HeroSlider = () => {
             </div>
           </div>
           <div>
-            <div className="hero-slick hero-slick-second">
+            <div className="hero-slick hero-slick-second" id="about_me">
             <picture>
                 <source srcSet="/assets/images/laptop-wall.png" media="(min-width: 1024px)" />
                 <source srcSet="/assets/images/laptop-wall-tablet.png" media="(min-width: 768px)" />
@@ -100,9 +92,6 @@ const HeroSlider = () => {
             </div>
           </div>
         </Slider>
-        <div className="arrow-scroll">
-          <span>Scroll Down <i className="fas fa-arrow-down"></i></span>
-        </div>
       </div>
      
     </Fragment>

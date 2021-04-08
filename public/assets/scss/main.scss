@@ -5,7 +5,9 @@ $green:#a3bd31;
 $purple-soft: #8336b4;
 $purple-soft-soft: #ab0bb9;
 $purple-dark: #5514a5;
+$purple-dark-1: #3c0e74;
 $gray-soft: #dcdcdc;
+$gray-soft-1: #f3f3f3;
 $purple-dark-rgb: rgba(85, 20, 165, 0.7);
 $purple-soft-rgb: rgba(131, 54, 180, 1);
 
@@ -36,6 +38,9 @@ $desktop-max-big-BP: 1600px;
 
 // Tech skills
 @import './components/tech-skills/tech-skills.scss';
+
+// Soft skills
+@import './components/soft-skills/soft-skills.scss';
 
 // Projects
 @import './components/projects/projects.scss';

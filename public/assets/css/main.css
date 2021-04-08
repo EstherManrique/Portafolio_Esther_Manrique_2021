@@ -209,6 +209,23 @@ div.card div.card-body p {
   color: #333; }
 
 /*----------------------------------------------------------------*\
+		MAIN FOOTER
+\*----------------------------------------------------------------*/
+.footer {
+  background: #333333;
+  height: 100px;
+  margin-top: -10px; }
+  .footer > h4 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.8rem;
+    padding-top: 10px; }
+  .footer > h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: normal; }
+
+/*----------------------------------------------------------------*\
 		MAIN NAV
 \*----------------------------------------------------------------*/
 nav.main-nav {
@@ -308,7 +325,7 @@ nav.main-nav {
 
 .hero-slider {
   margin-top: 7rem;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   position: relative;
   overflow: hidden; }
   .hero-slider div.hero-slick {
@@ -510,7 +527,8 @@ nav.main-nav {
 .tech-skills {
   width: 90%;
   max-width: 50rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 35px; }
   .tech-skills .container h1 {
     font-size: 3rem;
     margin-top: 100px; }
@@ -535,8 +553,22 @@ nav.main-nav {
       opacity: 0;
       transition: 2s ease 0.3s; }
 
-div.projects .project-item.bg-gray {
-  background: #dcdcdc; }
+.soft-skills ul {
+  display: flex;
+  flex-direction: row; }
+  .soft-skills ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none; }
+    .soft-skills ul li img {
+      width: 50%; }
+
+div.projects .project-item {
+  padding-top: 15px;
+  padding-bottom: 50px; }
+  div.projects .project-item.bg-gray {
+    background: #f3f3f3; }
 div.projects .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -552,6 +584,17 @@ div.projects .project-tech {
     color: #5514a5;
     margin-left: 1.5rem;
     font-weight: bold; }
+div.projects .project-links a img {
+  padding-right: 20px;
+  width: 2.8rem;
+  height: auto;
+  margin-bottom: 0; }
+div.projects .project-image a img {
+  width: 65%; }
+div.projects .project-image-1 a img {
+  width: 85%; }
+div.projects .project-image-2 a img {
+  width: 100%; }
 
 @keyframes move {
   0% {
@@ -603,6 +646,10 @@ p, li {
 
 .text-centered {
   text-align: center; }
+
+.v-align-center {
+  display: flex;
+  align-items: center; }
 
 html {
   font-size: 62.5%; }

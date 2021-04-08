@@ -1,28 +1,52 @@
 div.projects {
   .project-item {
+    padding-top: 15px;
+    padding-bottom: 50px;
+
     &.bg-gray {
-      background: $gray-soft;
+      background: $gray-soft-1;
     }
   }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+
   .project-tech {
     display: flex;
     align-items: center;
+
     h4 {
       font-size: 1.5rem;
       font-weight: bold;
     }
+
     .project-tech-list {
       font-size: 1.5rem;
       color: $purple-dark;
       margin-left: 1.5rem;
       font-weight: bold;
-
     }
+  }
 
+  .project-links a img {
+    padding-right: 20px;
+    width: 2.8rem;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .project-image a img {
+    width: 65%;
+  }
+
+  .project-image-1 a img {
+    width: 85%;
+  }
+
+  .project-image-2 a img {
+    width: 100%;
   }
 }

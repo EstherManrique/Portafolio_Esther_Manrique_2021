@@ -12,10 +12,7 @@ const MainNav = () => {
             </li>
 
             <li>
-              <Link to="tech-skills">Tech Skills</Link>
-            </li>
-            <li>
-              <Link to="soft-skills">Soft Skills</Link>
+              <Link to="skills">Skills</Link>
             </li>
             <li>
               <Link to="projects">Proyectos</Link>

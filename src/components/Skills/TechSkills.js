@@ -28,7 +28,11 @@ const TechSkills = () => {
       percentaje: 75,
     },
     {
-      name: "Materialize/Material UI",
+      name: "Materialize",
+      percentaje: 50,
+    },
+    {
+      name: "Material UI",
       percentaje: 50,
     },
     {
@@ -51,14 +55,12 @@ const TechSkills = () => {
   return (
     <Fragment>
       <div className="tech-skills">
-        <h1 className="gradient-title">Tech Skills</h1>
-        {skills.map((skill) => (
-          <Skill
-            key={skill.name}
-            done={skill.percentaje}
-            name={skill.name}
-          />
-        ))}
+        <div className="container">
+          <h1 className="gradient-title">Tech Skills</h1>
+          {skills.map((skill) => (
+            <Skill key={skill.name} done={skill.percentaje} name={skill.name} />
+          ))}
+        </div>
       </div>
     </Fragment>
   );

@@ -3,6 +3,7 @@
   /* margin-bottom: 4rem; */
   position: relative;
   overflow: hidden;
+  height: 92vh;
   div.hero-slick {
     position: relative;
 
@@ -12,15 +13,19 @@
         height: auto;
       }
     }
-    
-    .bg-gradient { 
+
+    .bg-gradient {
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       left: 0;
       background: $purple-dark;
-      background: linear-gradient(90deg, $purple-dark-rgb 35%, $purple-soft-rgb 100%);
+      background: linear-gradient(
+        90deg,
+        $purple-dark-rgb 35%,
+        $purple-soft-rgb 100%
+      );
       z-index: 2;
     }
 
@@ -36,12 +41,13 @@
           width: 100%;
           display: flex;
           align-items: center;
+          justify-content: center;
           @media screen and (min-width: $tablet-BP) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0 8rem;
           }
-  
+
           & > div {
             font-size: 2.5rem;
             color: white;
@@ -58,47 +64,51 @@
               }
             }
 
-            & > img { //DE AQUI
-                animation: fadein 15s;
-                -moz-animation: fadein 2s; /* Firefox */
-                -webkit-animation: fadein 15s; /* Safari and Chrome */
-                -o-animation: fadein 2s; /* Opera */
-            
-            @keyframes fadein {
+            & > img {
+              //DE AQUI
+              animation: fadein 15s;
+              -moz-animation: fadein 2s; /* Firefox */
+              -webkit-animation: fadein 15s; /* Safari and Chrome */
+              -o-animation: fadein 2s; /* Opera */
+
+              @keyframes fadein {
                 from {
-                    opacity:0;
+                  opacity: 0;
                 }
                 to {
-                    opacity:5;
+                  opacity: 5;
                 }
-            }
-            @-moz-keyframes fadein { /* Firefox */
+              }
+              @-moz-keyframes fadein {
+                /* Firefox */
                 from {
-                    opacity:0;
+                  opacity: 0;
                 }
                 to {
-                    opacity:1;
+                  opacity: 1;
                 }
-            }
-            @-webkit-keyframes fadein { /* Safari and Chrome */
+              }
+              @-webkit-keyframes fadein {
+                /* Safari and Chrome */
                 from {
-                    opacity:0;
+                  opacity: 0;
                 }
                 to {
-                    opacity:1;
+                  opacity: 1;
                 }
-            }
-            @-o-keyframes fadein { /* Opera */
+              }
+              @-o-keyframes fadein {
+                /* Opera */
                 from {
-                    opacity:0;
+                  opacity: 0;
                 }
                 to {
-                    opacity: 1;
+                  opacity: 1;
                 }
-            } //HASTA AQUI
+              } //HASTA AQUI
 
               @media screen and (min-width: $tablet-BP) {
-                transform: rotate(5deg);              
+                transform: rotate(5deg);
                 box-shadow: -25px 25px 25px rgba(0, 0, 0, 0.3);
                 display: inline;
                 max-width: 60%;
@@ -106,7 +116,7 @@
               @media screen and (min-width: $desktop-big-BP) {
                 max-width: none;
               }
-            }  
+            }
           }
         }
 
@@ -114,11 +124,14 @@
           font-weight: 500;
           margin-bottom: 0;
           text-align: right;
+          font-size: 2.5rem;
         }
 
         h4 {
           font-weight: lighter;
           margin: 0;
+          color: $white;
+          font-size: medium;
         }
       }
     }
@@ -169,7 +182,7 @@
       & > span {
         position: absolute;
         bottom: 0;
-        left:0;
+        left: 0;
       }
     }
   }
@@ -189,7 +202,7 @@
       span {
         i {
           animation: move 1s infinite alternate;
-          margin-left: .8rem;
+          margin-left: 0.8rem;
         }
       }
     }
@@ -257,6 +270,7 @@
           }
         }
       }
-  }
     }
   }
+  
+}

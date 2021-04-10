@@ -214,6 +214,7 @@ div.card div.card-body p {
 .footer {
   background: #333333;
   height: 100px;
+  width: 100%;
   margin-top: -10px; }
   .footer > h4 {
     color: #fff;
@@ -327,7 +328,8 @@ nav.main-nav {
   margin-top: 7rem;
   /* margin-bottom: 4rem; */
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 92vh; }
   .hero-slider div.hero-slick {
     position: relative; }
     .hero-slider div.hero-slick picture img {
@@ -351,7 +353,8 @@ nav.main-nav {
       left: 0;
       width: 100%;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       @media screen and (min-width: 768px) {
         .hero-slider div.hero-slick.hero-slick-first > div.grid {
           display: grid;
@@ -413,10 +416,13 @@ nav.main-nav {
     .hero-slider div.hero-slick.hero-slick-first > div h1 {
       font-weight: 500;
       margin-bottom: 0;
-      text-align: right; }
+      text-align: right;
+      font-size: 2.5rem; }
     .hero-slider div.hero-slick.hero-slick-first > div h4 {
       font-weight: lighter;
-      margin: 0; }
+      margin: 0;
+      color: #fff;
+      font-size: medium; }
     .hero-slider div.hero-slick.hero-slick-second .about-me-wrapper {
       color: #fff;
       font-family: "Poppins", sans-serif;
@@ -470,7 +476,7 @@ nav.main-nav {
         font-size: 1.7rem; }
         .hero-slider div.arrow-scroll span i {
           animation: move 1s infinite alternate;
-          margin-left: .8rem; } }
+          margin-left: 0.8rem; } }
   .hero-slider div.slick-dots {
     position: absolute;
     left: 0;
@@ -526,43 +532,56 @@ nav.main-nav {
 
 .tech-skills {
   width: 90%;
-  max-width: 50rem;
+  max-width: 70%;
   margin: 0 auto;
-  margin-bottom: 35px; }
+  /*  margin-bottom: 200px; */ }
   .tech-skills .container h1 {
-    font-size: 3rem;
-    margin-top: 100px; }
-  .tech-skills .container .tech-name {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: .5rem; }
-  .tech-skills .container .progress {
-    background-color: #dcdcdc;
-    border-radius: 20px;
-    height: 25px;
-    margin-bottom: 1rem; }
-    .tech-skills .container .progress .progress-done {
-      background: linear-gradient(to left, #5514a5, #ab0bb9);
+    font-size: 5rem;
+    margin-top: 76px; }
+  .tech-skills .container .skill-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3rem;
+    margin-bottom: 20px; }
+    .tech-skills .container .skill-wrapper .tech-name {
+      font-size: 2rem;
+      text-align: right;
+      margin-bottom: 0.5rem; }
+    .tech-skills .container .skill-wrapper .progress {
+      background-color: #dcdcdc;
       border-radius: 20px;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: 0;
-      opacity: 0;
-      transition: 2s ease 0.3s; }
+      height: 25px;
+      margin-bottom: 1rem; }
+      .tech-skills .container .skill-wrapper .progress .progress-done {
+        background: linear-gradient(to left, #5514a5, #ab0bb9);
+        border-radius: 20px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 0;
+        opacity: 0;
+        transition: 2s ease 0.3s; }
 
-.soft-skills ul {
-  display: flex;
-  flex-direction: row; }
-  .soft-skills ul li {
+.soft-skills {
+  width: 90%;
+  max-width: 70%;
+  margin: 50px auto;
+  padding: 50px 0; }
+  .soft-skills h1 {
+    margin-bottom: 100px; }
+  .soft-skills ul {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    list-style-type: none; }
-    .soft-skills ul li img {
-      width: 50%; }
+    flex-direction: row; }
+    .soft-skills ul li {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center; }
+      .soft-skills ul li img {
+        width: 50%; }
 
 div.projects .project-item {
   padding-top: 15px;
@@ -649,7 +668,8 @@ p, li {
 
 .v-align-center {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
 
 html {
   font-size: 62.5%; }

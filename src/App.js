@@ -17,26 +17,25 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route exact path="/tech-skills">
+        <Route exact path="/skills">
           <TechSkills />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route exact path="/soft-skills">
           <SoftSkills />
+          <Footer />
         </Route>
       </Switch>
       <Switch>
         <Route exact path="/projects">
           <Projects />
+          <Footer />
         </Route>
       </Switch>
       <Switch>
         <Route exact path="/contacto">
           <Contacto />
+          <Footer />
         </Route>
       </Switch>
-      <Footer />
+      
     </HashRouter>
   );
 }

@@ -1,18 +1,15 @@
-import React from 'react'
+import React, { Fragment } from "react";
 
 const Contacto = () => {
   return (
-    <div className="text-centered">
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+    <Fragment>
+      <div className="contacto">
 
-      <h1>Aquí va el componente de contacto</h1>
-    </div>
-  )
-}
+          
 
-export default Contacto
+      </div>
+    </Fragment>
+  );
+};
+
+export default Contacto;

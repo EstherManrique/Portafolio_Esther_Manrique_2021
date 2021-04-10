@@ -1,12 +1,22 @@
 .soft-skills {
+  width: 90%;
+  max-width: 70%;
+  margin: 50px auto;
+  padding: 50px 0;
+
+  h1 {
+    margin-bottom: 100px;
+  }
+  
   ul {
     display: flex;
     flex-direction: row;
     li {
       display: flex;
       flex-direction: column;
-      text-align: center;
       list-style-type: none;
+      justify-content: center;
+      align-items: center;
 
       img {
         width: 50%;

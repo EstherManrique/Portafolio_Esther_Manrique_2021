@@ -1,25 +1,48 @@
 .soft-skills {
-  width: 90%;
-  max-width: 70%;
   margin: 50px auto;
-  padding: 50px 0;
+
+  @media screen and (min-width: $tablet-BP) {
+    margin: 50px auto;
+    width: 100%;
+    margin: 0;
+  }
 
   h1 {
-    margin-bottom: 100px;
+    font-size: 3rem;
+
+    @media screen and (min-width: $tablet-BP) {
+      font-size: 4rem;
+    }
   }
-  
+
   ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 0;
+
+    @media screen and (min-width: $tablet-BP) {
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 10px;
+    }
+
     li {
       display: flex;
       flex-direction: column;
       list-style-type: none;
       justify-content: center;
       align-items: center;
+      margin-bottom: 10px;
+
+      @media screen and (min-width: $tablet-BP) {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
 
       img {
-        width: 50%;
+        width: 30%;
       }
     }
   }

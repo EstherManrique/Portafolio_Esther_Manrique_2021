@@ -1,45 +1,65 @@
 div.projects {
+  .gradient-title {
+    margin: 50px auto 0;
+  }
   .project-item {
     padding-top: 15px;
-    padding-bottom: 50px;
 
     &.bg-gray {
       background: $gray-soft-1;
     }
-  }
 
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    .container h3 {
+      margin: 0 auto 20px;
+    }
+  }
+  @media screen and (min-width: $tablet-BP) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
   }
 
   .project-tech {
-    display: flex;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: $tablet-BP) {
+      display: flex;
+      align-items: baseline;
+      text-align: left;
+    }
 
     h4 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: bold;
+      text-align: left;
+      margin-bottom: 0;
     }
 
     .project-tech-list {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       color: $purple-dark;
       margin-left: 1.5rem;
       font-weight: bold;
     }
   }
 
+  .project-links {
+    text-align: center;
+  }
   .project-links a img {
     padding-right: 20px;
     width: 2.8rem;
     height: auto;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    align-items: center;
+
   }
 
   .project-image a img {
     width: 65%;
+    margin: 20px auto;
   }
 
   .project-image-1 a img {

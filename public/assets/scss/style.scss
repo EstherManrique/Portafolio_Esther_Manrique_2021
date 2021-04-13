@@ -48,7 +48,7 @@ h4 {
 }
 
 p, li {
-	font-size: 1.6rem;
+	font-size: 1.9rem;
 }
 
 .text-centered {
@@ -59,4 +59,30 @@ p, li {
     display: flex;
     align-items: center;
 		justify-content: center;
+}
+
+
+.hide-on-small-only {
+	display: none;
+	@media(min-width: $tablet-BP) {
+		display: block;
+	}
+}
+.hide-on-med-and-down {
+	display: none;
+	@media(min-width: $desktop-BP) {
+		display: block;
+	}
+}
+.hide-on-large-and-up {
+	display: block;
+	@media(min-width: $desktop-BP) {
+		display: none !important;
+	}
+}
+.hide-on-med-and-up {
+	display: block;
+	@media(min-width: $tablet-BP) {
+		display: none !important;
+	}
 }

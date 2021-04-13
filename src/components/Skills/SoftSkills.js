@@ -26,20 +26,18 @@ const SoftSkills = () => {
       tl.add(child);
     });
   }, []);
-
-
-
+  
   return (
     <Fragment>
       <div className="soft-skills">
         <h1 className="gradient-title">Soft Skills</h1>
         <ul className="soft-icons">
           <li>
-            <img src="/assets/icons/brain.svg" alt="" />
+            <img src="/assets/icons/brain.png" alt="" />
             Autoaprendizaje
           </li>
           <li>
-            <img src="/assets/icons/partnership.svg" alt="" />
+            <img src="/assets/icons/partnership.png" alt="" />
             Trabajo en equipo
           </li>
           <li>
@@ -47,11 +45,11 @@ const SoftSkills = () => {
             Mentalidad de crecimiento
           </li>
           <li>
-            <img src="/assets/icons/brainstorming.svg" alt="" />
+            <img src="/assets/icons/brainstorming.png" alt="" />
             Mentalidad y cultura ágil
           </li>
           <li>
-            <img src="/assets/icons/feedback.svg" alt="" />
+            <img src="/assets/icons/feedback.png" alt="" />
             Comunicción eficaz y asertiva
           </li>
         </ul>

@@ -43,6 +43,14 @@ const Projects = () => {
                 (Firestore), Git &amp; Github (Projects, Issues, Labels).
               </div>
             </div>
+            <div className="project-image text-centered v-align-center">
+              <a
+                href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
+                target="_blank "
+              >
+                <img src="/assets/images/tablets2.png" alt="" />
+              </a>
+            </div>
             <div className="project-links">
               <a
                 href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
@@ -57,14 +65,7 @@ const Projects = () => {
                 <img src="/assets/icons/github2.png" alt="" />
               </a>
             </div>
-            <div className="project-image text-centered v-align-center">
-              <a
-                href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
-                target="_blank "
-              >
-                <img src="/assets/images/tablets2.png" alt="" />
-              </a>
-            </div>
+            
           </div>
         </div>
 

@@ -2,23 +2,37 @@
 		MAIN FOOTER
 \*----------------------------------------------------------------*/
 
-.footer {
+.main-footer {
   background: $dark;
-  height: 100px;
+  height: max-content;
   width:100%;
-  margin-top: -10px;
+  padding: 5px 0;
 
   & > h4 {
     color: $white;
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1rem;
     padding-top: 10px;
+
+    @media screen and (min-width: $tablet-BP){
+      font-size: 1.8rem;
+    }
+    @media screen and (min-width: $desktop-big-BP){
+      font-size: 2rem;
+    }
   }
 
   & > h3 {
     color: $white;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     font-weight: normal;
+
+    @media screen and (min-width: $tablet-BP){
+      font-size: 1rem;
+    }
+    @media screen and (min-width: $desktop-big-BP){
+      font-size: 1.3rem;
+    }
   }
 
 }

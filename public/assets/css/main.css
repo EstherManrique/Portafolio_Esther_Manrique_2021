@@ -211,20 +211,32 @@ div.card div.card-body p {
 /*----------------------------------------------------------------*\
 		MAIN FOOTER
 \*----------------------------------------------------------------*/
-.footer {
+.main-footer {
   background: #333333;
-  height: 100px;
+  height: max-content;
   width: 100%;
-  margin-top: -10px; }
-  .footer > h4 {
+  padding: 5px 0; }
+  .main-footer > h4 {
     color: #fff;
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1rem;
     padding-top: 10px; }
-  .footer > h3 {
+    @media screen and (min-width: 768px) {
+      .main-footer > h4 {
+        font-size: 1.8rem; } }
+    @media screen and (min-width: 1200px) {
+      .main-footer > h4 {
+        font-size: 2rem; } }
+  .main-footer > h3 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     font-weight: normal; }
+    @media screen and (min-width: 768px) {
+      .main-footer > h3 {
+        font-size: 1rem; } }
+    @media screen and (min-width: 1200px) {
+      .main-footer > h3 {
+        font-size: 1.3rem; } }
 
 /*----------------------------------------------------------------*\
 		MAIN NAV
@@ -324,6 +336,22 @@ nav.main-nav {
         top: 20px;
         left: 8px; }
 
+/* display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #252525;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(
+0deg
+);
+    transform: rotate(
+0deg
+);
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+ */
 .hero-slider {
   margin-top: 7rem;
   /* margin-bottom: 4rem; */
@@ -532,88 +560,209 @@ nav.main-nav {
 
 .tech-skills {
   width: 90%;
-  max-width: 70%;
+  /* max-width: 70%; */
   margin: 0 auto;
-  /*  margin-bottom: 200px; */ }
+  /* margin-bottom: 200px; */ }
   .tech-skills .container h1 {
-    font-size: 5rem;
-    margin-top: 76px; }
-  .tech-skills .container .skill-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 3rem;
-    margin-bottom: 20px; }
-    .tech-skills .container .skill-wrapper .tech-name {
-      font-size: 2rem;
-      text-align: right;
-      margin-bottom: 0.5rem; }
-    .tech-skills .container .skill-wrapper .progress {
-      background-color: #dcdcdc;
+    font-size: 3rem;
+    margin-top: 35px; }
+    @media screen and (min-width: 768px) {
+      .tech-skills .container h1 {
+        font-size: 4rem;
+        margin: 75px auto 25px; } }
+  @media screen and (min-width: 768px) {
+    .tech-skills .container .skill-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2rem;
+      margin-bottom: 20px; } }
+  .tech-skills .container .skill-wrapper .tech-name {
+    font-size: 1.5rem;
+    text-align: center;
+    /* margin-bottom: 0.5rem; */ }
+    @media screen and (min-width: 768px) {
+      .tech-skills .container .skill-wrapper .tech-name {
+        font-size: 1.8rem;
+        text-align: right; } }
+  .tech-skills .container .skill-wrapper .progress {
+    background-color: #dcdcdc;
+    border-radius: 20px;
+    height: 20px;
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 768px) {
+      .tech-skills .container .skill-wrapper .progress {
+        height: 25px; } }
+    .tech-skills .container .skill-wrapper .progress .progress-done {
+      background: linear-gradient(to left, #5514a5, #ab0bb9);
       border-radius: 20px;
-      height: 25px;
-      margin-bottom: 1rem; }
-      .tech-skills .container .skill-wrapper .progress .progress-done {
-        background: linear-gradient(to left, #5514a5, #ab0bb9);
-        border-radius: 20px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 0;
-        opacity: 0;
-        transition: 2s ease 0.3s; }
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 0;
+      opacity: 0;
+      transition: 2s ease 0.3s; }
 
 .soft-skills {
-  width: 90%;
-  max-width: 70%;
-  margin: 50px auto;
-  padding: 50px 0; }
+  margin: 50px auto; }
+  @media screen and (min-width: 768px) {
+    .soft-skills {
+      margin: 50px auto;
+      width: 100%;
+      margin: 0; } }
   .soft-skills h1 {
-    margin-bottom: 100px; }
+    font-size: 3rem; }
+    @media screen and (min-width: 768px) {
+      .soft-skills h1 {
+        font-size: 4rem; } }
   .soft-skills ul {
     display: flex;
-    flex-direction: row; }
+    flex-direction: column;
+    padding: 0; }
+    @media screen and (min-width: 768px) {
+      .soft-skills ul {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 10px; } }
     .soft-skills ul li {
       display: flex;
       flex-direction: column;
       list-style-type: none;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin-bottom: 10px; }
+      @media screen and (min-width: 768px) {
+        .soft-skills ul li {
+          flex-direction: column;
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 500; } }
       .soft-skills ul li img {
-        width: 50%; }
+        width: 30%; }
 
+div.projects .gradient-title {
+  margin: 50px auto 0; }
 div.projects .project-item {
-  padding-top: 15px;
-  padding-bottom: 50px; }
+  padding-top: 15px; }
   div.projects .project-item.bg-gray {
     background: #f3f3f3; }
-div.projects .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem; }
+  div.projects .project-item .container h3 {
+    margin: 0 auto 20px; }
+@media screen and (min-width: 768px) {
+  div.projects .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; } }
 div.projects .project-tech {
-  display: flex;
-  align-items: center; }
+  text-align: center;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    div.projects .project-tech {
+      display: flex;
+      align-items: baseline;
+      text-align: left; } }
   div.projects .project-tech h4 {
-    font-size: 1.5rem;
-    font-weight: bold; }
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0; }
   div.projects .project-tech .project-tech-list {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #5514a5;
     margin-left: 1.5rem;
     font-weight: bold; }
+div.projects .project-links {
+  text-align: center; }
 div.projects .project-links a img {
   padding-right: 20px;
   width: 2.8rem;
   height: auto;
-  margin-bottom: 0; }
+  margin-bottom: 20px;
+  align-items: center; }
 div.projects .project-image a img {
-  width: 65%; }
+  width: 65%;
+  margin: 20px auto; }
 div.projects .project-image-1 a img {
   width: 85%; }
 div.projects .project-image-2 a img {
   width: 100%; }
+
+.contacto {
+  margin-top: 26px;
+  position: relative;
+  padding: 50px 0;
+  background: url(/assets/images/coding-mobile.png) no-repeat top left; }
+  @media screen and (min-width: 1024px) {
+    .contacto {
+      background: url(/assets/images/keyboard-coffee-background.png) no-repeat center 85%;
+      padding: 100px 0; } }
+  .contacto > div {
+    /*   & > .email {
+      justify-content: center;
+    } */ }
+    .contacto > div.bg-gradient {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #5514a5;
+      background: linear-gradient(90deg, rgba(85, 20, 165, 0.7) 35%, #8336b4 100%);
+      z-index: 2; }
+    .contacto > div.contacto-texto {
+      position: relative;
+      z-index: 2; }
+      .contacto > div.contacto-texto .contacto-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .contacto > div.contacto-texto .contacto-info > div.datos-contacto {
+          text-align: center; }
+          .contacto > div.contacto-texto .contacto-info > div.datos-contacto h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 40px;
+            font-weight: 300; }
+            @media screen and (min-width: 768px) {
+              .contacto > div.contacto-texto .contacto-info > div.datos-contacto h1 {
+                font-size: 3rem; } }
+            @media screen and (min-width: 1024px) {
+              .contacto > div.contacto-texto .contacto-info > div.datos-contacto h1 {
+                font-size: 5rem; } }
+        .contacto > div.contacto-texto .contacto-info > div.email > a, .contacto > div.contacto-texto .contacto-info > div.whatsapp > a, .contacto > div.contacto-texto .contacto-info > div.git-hub > a, .contacto > div.contacto-texto .contacto-info > div.linkedin > a {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+          margin-bottom: 30px; }
+          @media screen and (min-width: 1024px) {
+            .contacto > div.contacto-texto .contacto-info > div.email > a, .contacto > div.contacto-texto .contacto-info > div.whatsapp > a, .contacto > div.contacto-texto .contacto-info > div.git-hub > a, .contacto > div.contacto-texto .contacto-info > div.linkedin > a {
+              flex-direction: row; } }
+          .contacto > div.contacto-texto .contacto-info > div.email > a img, .contacto > div.contacto-texto .contacto-info > div.whatsapp > a img, .contacto > div.contacto-texto .contacto-info > div.git-hub > a img, .contacto > div.contacto-texto .contacto-info > div.linkedin > a img {
+            width: 20%;
+            height: auto;
+            filter: invert(1);
+            padding-bottom: 15px; }
+            @media screen and (min-width: 768px) {
+              .contacto > div.contacto-texto .contacto-info > div.email > a img, .contacto > div.contacto-texto .contacto-info > div.whatsapp > a img, .contacto > div.contacto-texto .contacto-info > div.git-hub > a img, .contacto > div.contacto-texto .contacto-info > div.linkedin > a img {
+                width: 15%; } }
+            @media screen and (min-width: 1024px) {
+              .contacto > div.contacto-texto .contacto-info > div.email > a img, .contacto > div.contacto-texto .contacto-info > div.whatsapp > a img, .contacto > div.contacto-texto .contacto-info > div.git-hub > a img, .contacto > div.contacto-texto .contacto-info > div.linkedin > a img {
+                width: 3.5%; } }
+          .contacto > div.contacto-texto .contacto-info > div.email > a span, .contacto > div.contacto-texto .contacto-info > div.whatsapp > a span, .contacto > div.contacto-texto .contacto-info > div.git-hub > a span, .contacto > div.contacto-texto .contacto-info > div.linkedin > a span {
+            color: #fff;
+            font-size: 1.6rem;
+            text-align: center;
+            font-weight: 100; }
+            @media screen and (min-width: 768px) {
+              .contacto > div.contacto-texto .contacto-info > div.email > a span, .contacto > div.contacto-texto .contacto-info > div.whatsapp > a span, .contacto > div.contacto-texto .contacto-info > div.git-hub > a span, .contacto > div.contacto-texto .contacto-info > div.linkedin > a span {
+                font-size: 2rem; } }
+            @media screen and (min-width: 1024px) {
+              .contacto > div.contacto-texto .contacto-info > div.email > a span, .contacto > div.contacto-texto .contacto-info > div.whatsapp > a span, .contacto > div.contacto-texto .contacto-info > div.git-hub > a span, .contacto > div.contacto-texto .contacto-info > div.linkedin > a span {
+                margin-left: 30px;
+                font-size: 3rem; } }
 
 @keyframes move {
   0% {
@@ -661,7 +810,7 @@ h4 {
   color: #a3bd31; }
 
 p, li {
-  font-size: 1.6rem; }
+  font-size: 1.9rem; }
 
 .text-centered {
   text-align: center; }
@@ -670,6 +819,30 @@ p, li {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.hide-on-small-only {
+  display: none; }
+  @media (min-width: 768px) {
+    .hide-on-small-only {
+      display: block; } }
+
+.hide-on-med-and-down {
+  display: none; }
+  @media (min-width: 1024px) {
+    .hide-on-med-and-down {
+      display: block; } }
+
+.hide-on-large-and-up {
+  display: block; }
+  @media (min-width: 1024px) {
+    .hide-on-large-and-up {
+      display: none !important; } }
+
+.hide-on-med-and-up {
+  display: block; }
+  @media (min-width: 768px) {
+    .hide-on-med-and-up {
+      display: none !important; } }
 
 html {
   font-size: 62.5%; }

@@ -1,0 +1,164 @@
+/*----------------------------------------------------------------*\
+		MAIN NAV
+\*----------------------------------------------------------------*/
+
+
+
+nav.main-nav { 
+  position: fixed;
+  top: 0;
+  left: 0;
+	z-index: 5;
+	border-bottom: 3px solid $dark;
+	width:100%;
+  background: $white;
+  height: 6rem;
+  
+  @media screen and (min-width: $tablet-BP) {
+    background: $purple-dark-1;
+
+  }
+  & > div {
+    &:first-child {
+      @media screen and (min-width: $tablet-BP) {
+        height: 100%;
+      }
+
+      & > ul {
+        background: $white;
+        padding: 0;
+        position: fixed;
+        bottom: 0;
+        top: 6rem;
+        width: 100%;
+        right: -100%;
+        list-style-type: none;
+        margin: 0;
+        @media screen and (min-width: $tablet-BP) {
+          display: flex;
+          justify-content: center;
+          position: static;
+          width: auto;
+          background: none;
+          z-index: 3;
+          height: 100%;
+          align-items: center;
+        }
+        /* @media screen and (min-width: $desktop-BP) {
+          padding-right:10rem;
+        } */
+        & > li {
+          &.active {
+            a {
+              color: $purple-dark;
+            }
+          }
+          border-bottom: 1px solid $dark;
+          margin: 0 3rem;
+          padding: 1rem 0;
+          @media screen and (min-width: $tablet-BP) {
+            border:none;
+            margin:0;
+            padding: 0 25px;
+            line-height: normal;	
+            line-height: 4rem;	
+          }
+          @media screen and (min-width: $desktop-big-BP) {
+            padding: 0 50px;
+          }
+          & > a {
+            text-decoration: none;
+							//font-family: $ff-Alternate;
+							font-size: 4rem;
+							@media screen and (min-width: $tablet-BP) {
+								margin: 0 1.5rem;
+								font-size: 2rem;
+                color: $white;
+							}
+							@media screen and (min-width: $desktop-big-BP) {
+								margin: 0 2.5rem;
+								padding: 0 1rem;
+							}
+          }
+        }
+      }
+
+    }
+    &:last-child {
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      height: 100%;
+      & > div {
+        width: 32px;
+        height: 23px;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        & > span {
+          display: block;
+					position: absolute;
+					height: 3px;
+					width: 100%;
+					background: $dark;
+					opacity: 1;
+					left: 0;
+					transform: rotate(0deg);
+					transition: .25s ease-in-out;
+          &:nth-child(1) {
+            top: 0;
+					  transform-origin: left center;
+
+          }
+          &:nth-child(2) {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            transform-origin: left center;
+
+          }
+          &:nth-child(3) {
+            bottom: 0;
+					  transform-origin: left center;
+          }
+        }
+        &.open {
+          & > span {
+            &:nth-child(1) {
+              transform: rotate(45deg);
+              top: -3px;
+              left: 8px;
+            }
+            &:nth-child(2) {
+              width: 0%;
+              opacity: 0;
+            }
+            &:nth-child(3) {
+              transform: rotate(-45deg);
+              top: 20px;
+              left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #252525;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(
+0deg
+);
+    transform: rotate(
+0deg
+);
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+ */
+
+

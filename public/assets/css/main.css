@@ -466,7 +466,7 @@ nav.main-nav {
                 box-shadow: -25px 25px 25px rgba(0, 0, 0, 0.3);
                 display: inline;
                 max-width: 60%; } }
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 1024px) {
               .hero-slider div.hero-slick.hero-slick-first > div.grid > div > img {
                 max-width: none; } }
       .hero-slider div.hero-slick.hero-slick-first > div h1 {
@@ -474,7 +474,7 @@ nav.main-nav {
         margin-bottom: 0;
         text-align: right;
         font-size: 2.5rem; }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1024px) {
           .hero-slider div.hero-slick.hero-slick-first > div h1 {
             font-size: 4rem; } }
       .hero-slider div.hero-slick.hero-slick-first > div h4 {
@@ -482,9 +482,9 @@ nav.main-nav {
         margin: 0;
         color: #fff;
         font-size: 1.8; }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1024px) {
           .hero-slider div.hero-slick.hero-slick-first > div h4 {
-            font-size: 2rem; } }
+            font-size: 2.8rem; } }
     .hero-slider div.hero-slick.hero-slick-second {
       background: url("/assets/images/laptop-wall-mobile.png") no-repeat 0 0;
       background-size: cover;

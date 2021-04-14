@@ -118,7 +118,7 @@
                 display: inline;
                 max-width: 60%;
               }
-              @media screen and (min-width: $desktop-big-BP) {
+              @media screen and (min-width: $desktop-BP) {
                 max-width: none;
               }
             }
@@ -131,7 +131,7 @@
           text-align: right;
           font-size: 2.5rem;
 
-          @media screen and (min-width: $desktop-big-BP) {
+          @media screen and (min-width: $desktop-BP) {
             font-size: 4rem;
           }
         }
@@ -142,8 +142,8 @@
           color: $white;
           font-size: 1.8;
 
-          @media screen and (min-width: $desktop-big-BP) {
-            font-size: 2rem;
+          @media screen and (min-width: $desktop-BP) {
+            font-size: 2.8rem;
           }
         }
       }

@@ -11,30 +11,42 @@ nav.main-nav {
 	z-index: 5;
 	border-bottom: 3px solid $dark;
 	width:100%;
-	//background: url(/media/backgrounds/PaintBackground1.jpg) repeat 0 0;
+  background: $white;
+  height: 6rem;
+  
+  @media screen and (min-width: $tablet-BP) {
+    background: $purple-dark-1;
+
+  }
   & > div {
     &:first-child {
+      @media screen and (min-width: $tablet-BP) {
+        height: 100%;
+      }
+
       & > ul {
         background: $white;
         padding: 0;
         position: fixed;
-        right: 0;
-        top: 6rem;
         bottom: 0;
-        width: 0;
-        z-index: -1;
+        top: 6rem;
+        width: 100%;
+        right: -100%;
         list-style-type: none;
         margin: 0;
         @media screen and (min-width: $tablet-BP) {
           display: flex;
-          position:static;
+          justify-content: center;
+          position: static;
           width: auto;
-          background:none;
+          background: none;
           z-index: 3;
+          height: 100%;
+          align-items: center;
         }
-        @media screen and (min-width: $desktop-BP) {
-          padding-right:10rem ;
-        }
+        /* @media screen and (min-width: $desktop-BP) {
+          padding-right:10rem;
+        } */
         & > li {
           &.active {
             a {
@@ -47,9 +59,12 @@ nav.main-nav {
           @media screen and (min-width: $tablet-BP) {
             border:none;
             margin:0;
-            padding: 0;
+            padding: 0 25px;
             line-height: normal;	
             line-height: 4rem;	
+          }
+          @media screen and (min-width: $desktop-big-BP) {
+            padding: 0 50px;
           }
           & > a {
             text-decoration: none;
@@ -58,6 +73,7 @@ nav.main-nav {
 							@media screen and (min-width: $tablet-BP) {
 								margin: 0 1.5rem;
 								font-size: 2rem;
+                color: $white;
 							}
 							@media screen and (min-width: $desktop-big-BP) {
 								margin: 0 2.5rem;
@@ -72,7 +88,7 @@ nav.main-nav {
       display: flex;
       align-items: center;
       padding: 0 2rem;
-      border-left: 1px solid $gray-soft;
+      height: 100%;
       & > div {
         width: 32px;
         height: 23px;

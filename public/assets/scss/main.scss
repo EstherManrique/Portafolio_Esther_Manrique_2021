@@ -46,7 +46,7 @@ $desktop-max-big-BP: 1600px;
 @import './components/projects/projects.scss';
 
 // Contact
-@import './components/contacto/contacto.scss';
+@import './components/contact/contact.scss';
 
 //Vendor
 @import './vendor/animations.scss';
@@ -60,5 +60,6 @@ html {
 
 body {
 	font-family: $ff-poppins;
+	padding-top: 6rem;
 }
 

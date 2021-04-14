@@ -5,7 +5,7 @@ import SoftSkills from "./components/Skills/SoftSkills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import { Switch, Route, HashRouter } from "react-router-dom";
-import Contacto from "./components/Contacto/Contacto";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
       </Switch>
       <Switch>
         <Route exact path="/contacto">
-          <Contacto />
+          <Contact />
           <Footer />
         </Route>
       </Switch>

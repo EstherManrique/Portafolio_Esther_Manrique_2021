@@ -56,11 +56,6 @@ const HeroSlider = () => {
         <Slider {...settings}>
           <div>
             <div className="hero-slick hero-slick-first">
-              <picture>
-                <source srcSet="/assets/images/coding.png" media="(min-width: 1024px)" />
-                <source srcSet="/assets/images/coding-tablet.png" media="(min-width: 768px)" />
-                <img src="/assets/images/coding-mobile.png" alt="logo" />
-              </picture>
               <span className="bg-gradient"></span>
               <div className="grid">
                 <div className="name">
@@ -75,11 +70,6 @@ const HeroSlider = () => {
           </div>
           <div>
             <div className="hero-slick hero-slick-second" id="about_me">
-            <picture>
-                <source srcSet="/assets/images/laptop-wall.png" media="(min-width: 1024px)" />
-                <source srcSet="/assets/images/laptop-wall-tablet.png" media="(min-width: 768px)" />
-                <img src="/assets/images/laptop-wall-mobile.png" alt="logo" />
-              </picture>
               <span className="bg-gradient"></span>
               <div className="about-me-wrapper">
                 <h2 className="about-me-title">About Me</h2>

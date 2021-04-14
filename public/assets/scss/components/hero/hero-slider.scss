@@ -1,9 +1,8 @@
 .hero-slider {
-  margin-top: 7rem;
   /* margin-bottom: 4rem; */
   position: relative;
   overflow: hidden;
-  height: 92vh;
+  /*   height: 92vh; */
   div.hero-slick {
     position: relative;
 
@@ -30,15 +29,21 @@
     }
 
     &.hero-slick-first {
+      background: url("/assets/images/coding-mobile.png") no-repeat 0 0;
+      background-size: cover;
+      height: calc(100vh - 60px);
+      @media screen and (min-width: $tablet-BP) {
+        background-image: url("/assets/images/coding-tablet.png");
+      }
+      @media screen and (min-width: $desktop-BP) {
+        background-image: url("/assets/images/coding.png");
+      }
       & > div {
         &.grid {
           position: relative;
           z-index: 3;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
           width: 100%;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -125,18 +130,35 @@
           margin-bottom: 0;
           text-align: right;
           font-size: 2.5rem;
+
+          @media screen and (min-width: $desktop-big-BP) {
+            font-size: 4rem;
+          }
         }
 
         h4 {
           font-weight: lighter;
           margin: 0;
           color: $white;
-          font-size: medium;
+          font-size: 1.8;
+
+          @media screen and (min-width: $desktop-big-BP) {
+            font-size: 2rem;
+          }
         }
       }
     }
 
     &.hero-slick-second {
+      background: url("/assets/images/laptop-wall-mobile.png") no-repeat 0 0;
+      background-size: cover;
+      height: calc(100vh - 60px);
+      @media screen and (min-width: $tablet-BP) {
+        background-image: url("/assets/images/laptop-wall-tablet.png");
+      }
+      @media screen and (min-width: $desktop-BP) {
+        background-image: url("/assets/images/laptop-wall.png");
+      }
       .about-me-wrapper {
         color: #fff;
         font-family: $ff-poppins;
@@ -272,5 +294,4 @@
       }
     }
   }
-  
 }

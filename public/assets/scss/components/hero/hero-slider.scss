@@ -1,0 +1,297 @@
+.hero-slider {
+  /* margin-bottom: 4rem; */
+  position: relative;
+  overflow: hidden;
+  /*   height: 92vh; */
+  div.hero-slick {
+    position: relative;
+
+    picture {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .bg-gradient {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $purple-dark;
+      background: linear-gradient(
+        90deg,
+        $purple-dark-rgb 35%,
+        $purple-soft-rgb 100%
+      );
+      z-index: 2;
+    }
+
+    &.hero-slick-first {
+      background: url("/assets/images/coding-mobile.png") no-repeat 0 0;
+      background-size: cover;
+      height: calc(100vh - 60px);
+      @media screen and (min-width: $tablet-BP) {
+        background-image: url("/assets/images/coding-tablet.png");
+      }
+      @media screen and (min-width: $desktop-BP) {
+        background-image: url("/assets/images/coding.png");
+      }
+      & > div {
+        &.grid {
+          position: relative;
+          z-index: 3;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @media screen and (min-width: $tablet-BP) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 8rem;
+          }
+
+          & > div {
+            font-size: 2.5rem;
+            color: white;
+            text-align: center;
+            @media screen and (min-width: $tablet-BP) {
+              text-align: right;
+            }
+
+            &.heroImage {
+              display: none;
+              @media screen and (min-width: $tablet-BP) {
+                display: block;
+                text-align: left;
+              }
+            }
+
+            & > img {
+              //DE AQUI
+              animation: fadein 15s;
+              -moz-animation: fadein 2s; /* Firefox */
+              -webkit-animation: fadein 15s; /* Safari and Chrome */
+              -o-animation: fadein 2s; /* Opera */
+
+              @keyframes fadein {
+                from {
+                  opacity: 0;
+                }
+                to {
+                  opacity: 5;
+                }
+              }
+              @-moz-keyframes fadein {
+                /* Firefox */
+                from {
+                  opacity: 0;
+                }
+                to {
+                  opacity: 1;
+                }
+              }
+              @-webkit-keyframes fadein {
+                /* Safari and Chrome */
+                from {
+                  opacity: 0;
+                }
+                to {
+                  opacity: 1;
+                }
+              }
+              @-o-keyframes fadein {
+                /* Opera */
+                from {
+                  opacity: 0;
+                }
+                to {
+                  opacity: 1;
+                }
+              } //HASTA AQUI
+
+              @media screen and (min-width: $tablet-BP) {
+                transform: rotate(5deg);
+                box-shadow: -25px 25px 25px rgba(0, 0, 0, 0.3);
+                display: inline;
+                max-width: 60%;
+              }
+              @media screen and (min-width: $desktop-BP) {
+                max-width: none;
+              }
+            }
+          }
+        }
+
+        h1 {
+          font-weight: 500;
+          margin-bottom: 0;
+          text-align: right;
+          font-size: 2.5rem;
+
+          @media screen and (min-width: $desktop-BP) {
+            font-size: 4rem;
+          }
+        }
+
+        h4 {
+          font-weight: lighter;
+          margin: 0;
+          color: $white;
+          font-size: 1.8;
+
+          @media screen and (min-width: $desktop-BP) {
+            font-size: 2.8rem;
+          }
+        }
+      }
+    }
+
+    &.hero-slick-second {
+      background: url("/assets/images/laptop-wall-mobile.png") no-repeat 0 0;
+      background-size: cover;
+      height: calc(100vh - 60px);
+      @media screen and (min-width: $tablet-BP) {
+        background-image: url("/assets/images/laptop-wall-tablet.png");
+      }
+      @media screen and (min-width: $desktop-BP) {
+        background-image: url("/assets/images/laptop-wall.png");
+      }
+      .about-me-wrapper {
+        color: #fff;
+        font-family: $ff-poppins;
+        letter-spacing: 2px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 4;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        @media screen and (min-width: $desktop-BP) {
+          width: 50%;
+        }
+      }
+
+      .about-me-title {
+        font-size: 2.2rem;
+        margin: 0;
+        @media screen and (min-width: $tablet-BP) {
+          font-size: 3rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .about-me-content {
+        font-size: 1.5rem;
+        margin: 0;
+        @media screen and (min-width: $tablet-BP) {
+          font-size: 2.5rem;
+          margin: 3rem 0 0 0;
+        }
+      }
+    }
+
+    &:last-child {
+      & > span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  div.arrow-scroll {
+    display: none;
+    @media screen and (min-width: $tablet-BP) {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      color: #fff;
+      padding-bottom: 2rem;
+      font-size: 1.7rem;
+      span {
+        i {
+          animation: move 1s infinite alternate;
+          margin-left: 0.8rem;
+        }
+      }
+    }
+  }
+
+  div.slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    width: 100%;
+    @media screen and (min-width: $tablet-BP) {
+      left: 2.5rem;
+      top: 0;
+      bottom: 0;
+      width: 3rem;
+    }
+    ul {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      @media screen and (min-width: $tablet-BP) {
+        flex-direction: column;
+      }
+
+      li {
+        width: 3.4rem;
+        height: 3.4rem;
+        margin: 0 1rem;
+        @media screen and (min-width: $tablet-BP) {
+          margin: 1rem 0;
+        }
+        &.slick-active,
+        &:hover {
+          button {
+            &:before {
+              width: 3rem;
+              height: 3rem;
+              background: $green;
+              transition: all 200ms ease-in;
+            }
+          }
+        }
+        button {
+          position: relative;
+          width: 3.4rem;
+          height: 3.4rem;
+          &:before {
+            width: 2rem;
+            height: 2rem;
+            color: $green;
+            border: 2px solid $white;
+            border-radius: 50%;
+            opacity: 1;
+            content: "";
+            transition: all 200ms ease-in;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}

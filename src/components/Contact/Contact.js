@@ -12,25 +12,25 @@ const Contacto = () => {
             </div>
             <div className="email">
               <a href="mailto:dev.publicidadweb@gmail.com" target="_blank ">
-                <img src="/assets/icons/email.svg" alt="" />
+                <img src="assets/icons/email.svg" alt="" />
                 <span>dev.publicidadweb@gmail.com</span>
               </a>
             </div>
             <div className="whatsapp">
               <a href="tel:5528529983">
-              <img src="/assets/icons/whatsapp.png" alt="" />
+              <img src="assets/icons/whatsapp.png" alt="" />
               <span>55 2852 9983</span>
               </a>
             </div>
             <div className="git-hub">
               <a href="https://github.com/EstherManrique?tab=repositories" target="_blank ">
-                <img src="/assets/icons/github.svg" alt=""/>
+                <img src="assets/icons/github.svg" alt=""/>
                 <span>https://github.com/EstherManrique?tab=repositories</span>
               </a>
             </div>
             <div className="linkedin">
               <a href="https://www.linkedin.com/in/esther-manrique/" target="_blank " >
-                <img src="/assets/icons/linkedin.svg" alt="" />
+                <img src="assets/icons/linkedin.svg" alt="" />
                 <span>https://www.linkedin.com/in/esther-manrique/</span>
               </a>
             </div>

@@ -48,7 +48,7 @@ const Projects = () => {
                 href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
                 target="_blank "
               >
-                <img src="/assets/images/tablets2.png" alt="" />
+                <img src="assets/images/tablets2.png" alt="" />
               </a>
             </div>
             <div className="project-links">
@@ -56,16 +56,15 @@ const Projects = () => {
                 href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
                 target="_blank "
               >
-                <img src="/assets/icons/enlace2.png" alt="" />
+                <img src="assets/icons/enlace2.png" alt="" />
               </a>
               <a
                 href="https://github.com/EstherManrique/CDMX009-BurgerQueen"
                 target="_blank "
               >
-                <img src="/assets/icons/github2.png" alt="" />
+                <img src="assets/icons/github2.png" alt="" />
               </a>
             </div>
-            
           </div>
         </div>
 
@@ -78,10 +77,9 @@ const Projects = () => {
                   href="https://esthermanrique.github.io/CDMX009-Social-Network/src/"
                   target="_blank "
                 >
-                  <img src="/assets/images/mobile.png" alt="" />
+                  <img src="assets/images/mobile.png" alt="" />
                 </a>
               </div>
-
               <div>
                 <p>
                   La aplicación es una Red Social pensada en los amantes del
@@ -100,8 +98,7 @@ const Projects = () => {
                     Leer y comentar los post de otros usuarios.
                     </li>
                   </ol>
-                </div>
-                
+                </div>                
                 <div className="project-results">
                   <h4 className="is-green">Resultados:</h4>
                   <ol>
@@ -134,20 +131,19 @@ const Projects = () => {
                     href="https://esthermanrique.github.io/CDMX009-Social-Network/src/"
                     target="_blank "
                   >
-                    <img src="/assets/icons/enlace2.png" alt="" />
+                    <img src="assets/icons/enlace2.png" alt="" />
                   </a>
                   <a
                     href="https://github.com/esthermanrique/CDMX009-Social-Network"
                     target="_blank "
                   >
-                    <img src="/assets/icons/github2.png" alt="" />
+                    <img src="assets/icons/github2.png" alt="" />
                   </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        
+        </div>        
         <div className="project-item">
           <div className="container">
             <h3 className="text-centered">Data Lovers</h3>
@@ -183,7 +179,6 @@ const Projects = () => {
                     </li>
                   </ol>
                 </div>
-
                 <div className="project-tech">
                   <h4>Tech:</h4>
                   <div className="project-tech-list">
@@ -195,13 +190,13 @@ const Projects = () => {
                     href="https://esthermanrique.github.io/CDMX009-Data-Lovers/src/"
                     target="_blank "
                   >
-                    <img src="/assets/icons/enlace2.png" alt="" />
+                    <img src="assets/icons/enlace2.png" alt="" />
                   </a>
                   <a
                     href="https://github.com/EstherManrique/CDMX009-Data-Lovers"
                     target="_blank "
                   >
-                    <img src="/assets/icons/github2.png" alt="" />
+                    <img src="assets/icons/github2.png" alt="" />
                   </a>
                 </div>
               </div>
@@ -210,13 +205,12 @@ const Projects = () => {
                   href="https://esthermanrique.github.io/CDMX009-Data-Lovers/src/"
                   target="_blank "
                 >
-                  <img src="/assets/images/laptop2.png" alt="" />
+                  <img src="assets/images/laptop2.png" alt="" />
                 </a>
               </div>
             </div>
           </div>
         </div>
-
         <div className="project-item bg-gray">
           <div className="container">
             <h3 className="text-centered">Cipher</h3>
@@ -226,10 +220,9 @@ const Projects = () => {
                   href="https://esthermanrique.github.io/CDMX009-cipher/src/"
                   target="_blank "
                 >
-                  <img src="/assets/images/macbookpro.png" alt="" />
+                  <img src="assets/images/macbookpro.png" alt="" />
                 </a>
               </div>
-
               <div>
               <p>Aplicación para la generación sellos digitales y facturación electrónica. Mediante el cifrado y descifrado de clabes.
               Los usuarios son  los Contribuyentes (Personas físicas y morales), que pagan impuestos y facturan sus productos y/o servicios.
@@ -245,8 +238,7 @@ const Projects = () => {
                       Cifrado de plabara clabe.
                     </li>
                   </ol>
-                </div>
-                
+                </div>                
                 <div className="project-results">
                   <h4 className="is-green">Resultados:</h4>
                   <ol>
@@ -255,7 +247,6 @@ const Projects = () => {
                     </li>
                   </ol>
                 </div>
-
                 <div className="project-tech">
                   <h4>Tech:</h4>
                   <div className="project-tech-list">
@@ -267,13 +258,13 @@ const Projects = () => {
                     href="https://esthermanrique.github.io/CDMX009-cipher/src/"
                     target="_blank "
                   >
-                    <img src="/assets/icons/enlace2.png" alt="" />
+                    <img src="assets/icons/enlace2.png" alt="" />
                   </a>
                   <a
                     href="https://github.com/EstherManrique/CDMX009-cipher"
                     target="_blank "
                   >
-                    <img src="/assets/icons/github2.png" alt="" />
+                    <img src="assets/icons/github2.png" alt="" />
                   </a>
                 </div>
               </div>

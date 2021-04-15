@@ -17,32 +17,6 @@ const HeroSlider = () => {
     autoplaySpeed: 5000,
     pauseOnHover: true,
     appendDots: dots => <div className="slider-home-dots" aria-label="dots slider change image"><ul>{dots}</ul></div>,
-    /* beforeChange: (oldIndex, newIndex) => {
-      const image = document.querySelector('#photo');
-      if(oldIndex === 0){
-        gsap.fromTo(image,
-          {
-            autoAlpha: 1
-          },
-          {
-            autoAlpha: 0,
-            duration: 2
-          }
-        );
-      }
-      if(oldIndex === 1){
-        gsap.fromTo(image,
-          {
-            autoAlpha: 0
-          },
-          {
-            autoAlpha: 1,
-            duration: 2
-          }
-        );
-      }
-    },*/
-    
     onInit: () => {
       const name = document.getElementById('name');
       var tl = new TimelineMax({repeat:-1, yoyo:false, repeatDelay:0});
@@ -63,7 +37,7 @@ const HeroSlider = () => {
                   <h4>&lt;Laboratoria&gt;</h4>
                 </div>
                 <div className="heroImage">
-                  <img src="/assets/images/EM_1.jpg" alt="photographie portfolio" className="foto" id="photo"/>
+                  <img src="assets/images/EM_1.jpg" alt="photographie portfolio" className="foto" id="photo"/>
                 </div>
               </div>
             </div>

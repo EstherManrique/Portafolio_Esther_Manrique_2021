@@ -29,14 +29,14 @@
     }
 
     &.hero-slick-first {
-      background: url("/assets/images/coding-mobile.png") no-repeat 0 0;
+      background: url("../images/coding-mobile.png") no-repeat 0 0;
       background-size: cover;
       height: calc(100vh - 60px);
       @media screen and (min-width: $tablet-BP) {
-        background-image: url("/assets/images/coding-tablet.png");
+        background-image: url("../images/coding-tablet.png");
       }
       @media screen and (min-width: $desktop-BP) {
-        background-image: url("/assets/images/coding.png");
+        background-image: url("../images/coding.png");
       }
       & > div {
         &.grid {
@@ -150,14 +150,14 @@
     }
 
     &.hero-slick-second {
-      background: url("/assets/images/laptop-wall-mobile.png") no-repeat 0 0;
+      background: url("../images/laptop-wall-mobile.png") no-repeat 0 0;
       background-size: cover;
       height: calc(100vh - 60px);
       @media screen and (min-width: $tablet-BP) {
-        background-image: url("/assets/images/laptop-wall-tablet.png");
+        background-image: url("../images/laptop-wall-tablet.png");
       }
       @media screen and (min-width: $desktop-BP) {
-        background-image: url("/assets/images/laptop-wall.png");
+        background-image: url("../images/laptop-wall.png");
       }
       .about-me-wrapper {
         color: #fff;

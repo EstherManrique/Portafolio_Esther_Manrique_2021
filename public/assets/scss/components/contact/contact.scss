@@ -1,12 +1,12 @@
 .contacto {
   position: relative;
   padding: 50px 0;
-  background: url(/assets/images/coding-mobile.png) no-repeat top left;
+  background: url(../images/coding-mobile.png) no-repeat top left;
   @media screen and (min-width: $tablet-BP) {
     height: calc(100vh - 233px);
   }
   @media screen and (min-width: $desktop-BP) {
-    background: url(/assets/images/keyboard-coffee-background.png) no-repeat center 85%;
+    background: url(../images/keyboard-coffee-background.png) no-repeat center 85%;
     padding: 113px 0;
   }
 

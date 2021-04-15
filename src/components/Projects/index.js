@@ -11,7 +11,7 @@ const Projects = () => {
             <p>
               Aplicación diseñada para <strong> tablet (Ipad Pro) </strong> con el
               objetivo de facilitar la comunicación entre meseros, cocina y
-              caja, optimizando tiempos para brindar un mejor servico. La App
+              caja, optimizando tiempos para brindar un mejor servicio. La App
               tiene dos roles de usuario: Meseros y Cocina.
             </p>
             <div className="grid">
@@ -89,7 +89,7 @@ const Projects = () => {
                   <h4 className="is-green">Objetivos:</h4>
                   <ol>
                     <li>
-                      Conectar a usuarios interesados en el mundo de la tecnológia.
+                      Conectar a usuarios interesados en el mundo de la tecnología.
                     </li>
                     <li>
                     Crear, Leer, Actualizar y/o Borrar sus Post o imágenes.
@@ -151,7 +151,7 @@ const Projects = () => {
               <div>
               <p>Aplicación para el manejo de datos, visualización de gráficas y tablas de información.
               
-              Los usuarios pueden visualizar la data de Personas heridas por medio de transporte en EEUU, seleccionando el tipo de transporte y el periodo. La aplicación les mostrara como resultado de su solicitud, la data representada en una <strong>Gráfica de Pie 3D y una lineal, así como la tabla correspondiente a los datos.</strong>
+              Los usuarios pueden visualizar la data de Personas heridas por medio de transporte en EEUU, seleccionando el tipo de transporte y el período. La aplicación les mostrará como resultado de su solicitud, la data representada en una <strong>Gráfica de Pie 3D y una lineal, así como la tabla correspondiente a los datos.</strong>
               </p>
                 <div className="project-objectives">
                   <h4 className="is-green">Objetivos:</h4>
@@ -224,7 +224,7 @@ const Projects = () => {
                 </a>
               </div>
               <div>
-              <p>Aplicación para la generación sellos digitales y facturación electrónica. Mediante el cifrado y descifrado de clabes.
+              <p>Aplicación para la generación de sellos digitales y facturación electrónica. Mediante el cifrado y descifrado de clabes.
               Los usuarios son  los Contribuyentes (Personas físicas y morales), que pagan impuestos y facturan sus productos y/o servicios.
               Con esta aplicación y por medio de un despacho de contadores, obtener ante la SHCP la autorización para la generación de sellos digitales que incluye la facturación electrónica. 
               </p>

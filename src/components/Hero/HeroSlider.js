@@ -50,7 +50,7 @@ const HeroSlider = () => {
                 <p className="about-me-content">
                   Soy apasionada por naturaleza propia, entre las cosas que más me gustan en la vida, una de ellas es la programación, el diseño, desarrollo de software y páginas web.
                   Me encantan los retos, pero lo que más disfruto de ellos, es la busqueda y el logro de su correcta solución.
-                  Me gusta perseguir mis sueños, lograr mis metas y pienso que no hay limites, sólo existen los que uno mismo se impone...
+                  Me gusta perseguir mis sueños, lograr mis metas y pienso que no hay límites, sólo existen los que uno mismo se impone...
                 </p>
               </div>
             </div>

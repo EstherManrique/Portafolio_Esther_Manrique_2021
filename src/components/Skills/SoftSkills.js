@@ -50,7 +50,7 @@ const SoftSkills = () => {
           </li>
           <li>
             <img src="assets/icons/feedback.png" alt="" />
-            Comunicción eficaz y asertiva
+            Comunicación eficaz y asertiva
           </li>
         </ul>
       </div>

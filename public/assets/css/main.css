@@ -305,7 +305,8 @@ nav.main-nav {
           padding: 0 50px; } }
       nav.main-nav > div:first-child > ul > li > a {
         text-decoration: none;
-        font-size: 4rem; }
+        font-size: 4rem;
+        outline: none; }
         @media screen and (min-width: 768px) {
           nav.main-nav > div:first-child > ul > li > a {
             margin: 0 1.5rem;
@@ -668,7 +669,8 @@ nav.main-nav {
       .soft-skills ul {
         flex-direction: row;
         align-items: flex-start;
-        margin: 10px; } }
+        margin: 10px;
+        justify-content: space-around; } }
     .soft-skills ul li {
       display: flex;
       flex-direction: column;

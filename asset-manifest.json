@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Portafolio_Esther_Manrique_2021/static/js/main.129522b5.chunk.js",
-    "main.js.map": "/Portafolio_Esther_Manrique_2021/static/js/main.129522b5.chunk.js.map",
+    "main.js": "/Portafolio_Esther_Manrique_2021/static/js/main.217c136c.chunk.js",
+    "main.js.map": "/Portafolio_Esther_Manrique_2021/static/js/main.217c136c.chunk.js.map",
     "runtime-main.js": "/Portafolio_Esther_Manrique_2021/static/js/runtime-main.05c1332e.js",
     "runtime-main.js.map": "/Portafolio_Esther_Manrique_2021/static/js/runtime-main.05c1332e.js.map",
     "static/js/2.d100bd69.chunk.js": "/Portafolio_Esther_Manrique_2021/static/js/2.d100bd69.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.05c1332e.js",
     "static/js/2.d100bd69.chunk.js",
-    "static/js/main.129522b5.chunk.js"
+    "static/js/main.217c136c.chunk.js"
   ]
 }

@@ -48,7 +48,7 @@ const Projects = () => {
                 href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
                 target="_blank "
               >
-                <img src="assets/images/tablets2.png" alt="" />
+                <img src={process.env.PUBLIC_URL + "/assets/images/tablets2.png"} alt="" />
               </a>
             </div>
             <div className="project-links">
@@ -56,13 +56,13 @@ const Projects = () => {
                 href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
                 target="_blank "
               >
-                <img src="assets/icons/enlace2.png" alt="" />
+                <img src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"} alt="" />
               </a>
               <a
                 href="https://github.com/EstherManrique/CDMX009-BurgerQueen"
                 target="_blank "
               >
-                <img src="assets/icons/github2.png" alt="" />
+                <img src={process.env.PUBLIC_URL + "/assets/icons/github2.png"} alt="" />
               </a>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Projects = () => {
                   href="https://esthermanrique.github.io/CDMX009-Social-Network/src/"
                   target="_blank "
                 >
-                  <img src="assets/images/mobile.png" alt="" />
+                  <img src={process.env.PUBLIC_URL + "/assets/images/mobile.png"} alt="" />
                 </a>
               </div>
               <div>
@@ -131,13 +131,13 @@ const Projects = () => {
                     href="https://esthermanrique.github.io/CDMX009-Social-Network/src/"
                     target="_blank "
                   >
-                    <img src="assets/icons/enlace2.png" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"} alt="" />
                   </a>
                   <a
                     href="https://github.com/esthermanrique/CDMX009-Social-Network"
                     target="_blank "
                   >
-                    <img src="assets/icons/github2.png" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/assets/icons/github2.png"} alt="" />
                   </a>
                 </div>
               </div>
@@ -190,13 +190,13 @@ const Projects = () => {
                     href="https://esthermanrique.github.io/CDMX009-Data-Lovers/src/"
                     target="_blank "
                   >
-                    <img src="assets/icons/enlace2.png" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"} alt="" />
                   </a>
                   <a
                     href="https://github.com/EstherManrique/CDMX009-Data-Lovers"
                     target="_blank "
                   >
-                    <img src="assets/icons/github2.png" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/assets/icons/github2.png"} alt="" />
                   </a>
                 </div>
               </div>
@@ -205,7 +205,7 @@ const Projects = () => {
                   href="https://esthermanrique.github.io/CDMX009-Data-Lovers/src/"
                   target="_blank "
                 >
-                  <img src="assets/images/laptop2.png" alt="" />
+                  <img src={process.env.PUBLIC_URL + "/assets/images/laptop2.png"} alt="" />
                 </a>
               </div>
             </div>
@@ -220,7 +220,7 @@ const Projects = () => {
                   href="https://esthermanrique.github.io/CDMX009-cipher/src/"
                   target="_blank "
                 >
-                  <img src="assets/images/macbookpro.png" alt="" />
+                  <img src={process.env.PUBLIC_URL + "/assets/images/macbookpro.png"} alt="" />
                 </a>
               </div>
               <div>
@@ -258,13 +258,13 @@ const Projects = () => {
                     href="https://esthermanrique.github.io/CDMX009-cipher/src/"
                     target="_blank "
                   >
-                    <img src="assets/icons/enlace2.png" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"} alt="" />
                   </a>
                   <a
                     href="https://github.com/EstherManrique/CDMX009-cipher"
                     target="_blank "
                   >
-                    <img src="assets/icons/github2.png" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/assets/icons/github2.png"} alt="" />
                   </a>
                 </div>
               </div>

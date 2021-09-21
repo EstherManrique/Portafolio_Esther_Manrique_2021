@@ -37,7 +37,7 @@ const HeroSlider = () => {
                   <h4>&lt;Laboratoria&gt;</h4>
                 </div>
                 <div className="heroImage">
-                  <img src="assets/images/EM_1.jpg" alt="photographie portfolio" className="foto" id="photo"/>
+                  <img src={process.env.PUBLIC_URL + "/assets/images/EM_1.jpg"} alt="photographie portfolio" className="foto" id="photo"/>
                 </div>
               </div>
             </div>

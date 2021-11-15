@@ -8,62 +8,69 @@ const Projects = () => {
 
         <div className="project-item">
           <div className="container">
-            <h3 className="text-centered">Avaluos de Bienes Inmuebles Maquinaria y Equipo</h3>
+            <h3 className="text-centered">
+              Avalúos de Bienes Inmuebles Maquinaria y Equipo
+            </h3>
             <p>
-              Aplicación diseñada para <strong> tablet (Ipad Pro) </strong> con el
-              objetivo de facilitar la comunicación entre meseros, cocina y
-              caja, optimizando tiempos para brindar un mejor servicio. La App
-              tiene dos roles de usuario: Meseros y Cocina.
+              Página Web diseñada y desarrollada acorde a las necesidades del
+              cliente, la cual tiene como objetivo ofrecer a los usuarios diversos servicios, relacionados con la Valuación de Bienes Inmuebles, Maquinaria y Equipo.
             </p>
             <div className="grid">
               <div className="project-objectives">
                 <h4 className="is-green">Objetivos:</h4>
                 <ol>
+                  <li>Diseñar, Sketch, Wireframes, Mockup y Prototipo.</li>
                   <li>
-                    Tomar las ordenes a los comensales de forma rápida y
-                    eficiente.
+                    Desarrollar un Sitio Web profesional, ligero, atractivo, lograr la mejor experiencia de usuario y practicas de SEO.
                   </li>
-                  <li>Agilizar la comunicación entre mesero, cocina y caja.</li>
                 </ol>
               </div>
               <div className="project-results">
                 <h4 className="is-green">Resultados:</h4>
                 <ol>
-                  <li>
-                    Menos margen de error en la preparación de los alimentos.
-                  </li>
-                  <li>Mayor exactitud al registrar el consumo en caja.</li>
-                  <li>Menos tiempo de espera para los comensales.</li>
+                  <li>Sitio Web responsive atractivo a la vista de los usuarios.</li>
+                  <li>Interface amigable y fácil de usar.</li>
+                  <li>El Sitio Web es escalable y de fácil mantenimieto.</li>
                 </ol>
               </div>
             </div>
             <div className="project-tech">
               <h4>Tech:</h4>
               <div className="project-tech-list">
-                Figma, HTML5, CSS3, Bootstrap, JavaScript, ReactJS, Firebase
-                (Firestore), Git &amp; Github (Projects, Issues, Labels).
+                Figma, HTML5, Sass, JavaScript, ReactJS, Git &amp; Github.
               </div>
             </div>
             <div className="project-image text-centered v-align-center">
               <a
-                href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
+                href="https://esthermanrique.github.io/avbinme-react/"
                 target="_blank "
               >
-                <img src={process.env.PUBLIC_URL + "/assets/images/AvBin_Gif_OK.gif"} alt="" />
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "/assets/images/AvBin_Gif_OK.gif"
+                  }
+                  alt=""
+                />
               </a>
             </div>
             <div className="project-links">
               <a
-                href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
+                href="https://esthermanrique.github.io/avbinme-react/"
                 target="_blank "
               >
-                <img src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"} alt="" />
+                <img
+                  src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"}
+                  alt=""
+                />
               </a>
               <a
-                href="https://github.com/EstherManrique/CDMX009-BurgerQueen"
+                href="https://github.com/EstherManrique/avbinme-react"
                 target="_blank "
               >
-                <img src={process.env.PUBLIC_URL + "/assets/icons/github2.png"} alt="" />
+                <img
+                  src={process.env.PUBLIC_URL + "/assets/icons/github2.png"}
+                  alt=""
+                />
               </a>
             </div>
           </div>
@@ -73,8 +80,8 @@ const Projects = () => {
           <div className="container">
             <h3 className="text-centered">Burger Queen</h3>
             <p>
-              Aplicación diseñada para <strong> tablet (Ipad Pro) </strong> con el
-              objetivo de facilitar la comunicación entre meseros, cocina y
+              Aplicación diseñada para <strong> tablet (Ipad Pro) </strong> con
+              el objetivo de facilitar la comunicación entre meseros, cocina y
               caja, optimizando tiempos para brindar un mejor servicio. La App
               tiene dos roles de usuario: Meseros y Cocina.
             </p>
@@ -112,7 +119,10 @@ const Projects = () => {
                 href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
                 target="_blank "
               >
-                <img src={process.env.PUBLIC_URL + "/assets/images/tablets2.png"} alt="" />
+                <img
+                  src={process.env.PUBLIC_URL + "/assets/images/tablets2.png"}
+                  alt=""
+                />
               </a>
             </div>
             <div className="project-links">
@@ -120,13 +130,19 @@ const Projects = () => {
                 href="https://esthermanrique.github.io/CDMX009-BurgerQueen"
                 target="_blank "
               >
-                <img src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"} alt="" />
+                <img
+                  src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"}
+                  alt=""
+                />
               </a>
               <a
                 href="https://github.com/EstherManrique/CDMX009-BurgerQueen"
                 target="_blank "
               >
-                <img src={process.env.PUBLIC_URL + "/assets/icons/github2.png"} alt="" />
+                <img
+                  src={process.env.PUBLIC_URL + "/assets/icons/github2.png"}
+                  alt=""
+                />
               </a>
             </div>
           </div>
@@ -141,34 +157,35 @@ const Projects = () => {
                   href="https://esthermanrique.github.io/CDMX009-Social-Network/src/"
                   target="_blank "
                 >
-                  <img src={process.env.PUBLIC_URL + "/assets/images/mobile.png"} alt="" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/assets/images/mobile.png"}
+                    alt=""
+                  />
                 </a>
               </div>
               <div>
                 <p>
                   La aplicación es una Red Social pensada en los amantes del
-                  código. Con el objetivo de crear un espacio donde la comunidad Tech pueda compartir información y conocimientos.
+                  código. Con el objetivo de crear un espacio donde la comunidad
+                  Tech pueda compartir información y conocimientos.
                 </p>
                 <div className="project-objectives">
                   <h4 className="is-green">Objetivos:</h4>
                   <ol>
                     <li>
-                      Conectar a usuarios interesados en el mundo de la tecnología.
+                      Conectar a usuarios interesados en el mundo de la
+                      tecnología.
                     </li>
                     <li>
-                    Crear, Leer, Actualizar y/o Borrar sus Post o imágenes.
+                      Crear, Leer, Actualizar y/o Borrar sus Post o imágenes.
                     </li>
-                    <li>
-                    Leer y comentar los post de otros usuarios.
-                    </li>
+                    <li>Leer y comentar los post de otros usuarios.</li>
                   </ol>
-                </div>                
+                </div>
                 <div className="project-results">
                   <h4 className="is-green">Resultados:</h4>
                   <ol>
-                    <li>
-                      Mantener conectados a los usuarios.
-                    </li>
+                    <li>Mantener conectados a los usuarios.</li>
                     <li>
                       Compartir experiencias, conocimientos e información.
                     </li>
@@ -177,7 +194,7 @@ const Projects = () => {
                     </li>
                   </ol>
                 </div>
-              
+
                 <p>
                   Es un proyecto colaborativo por lo que usamos Trello para la
                   planeación y Github para el control de versiones de código.
@@ -195,58 +212,73 @@ const Projects = () => {
                     href="https://esthermanrique.github.io/CDMX009-Social-Network/src/"
                     target="_blank "
                   >
-                    <img src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"} alt="" />
+                    <img
+                      src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"}
+                      alt=""
+                    />
                   </a>
                   <a
                     href="https://github.com/esthermanrique/CDMX009-Social-Network"
                     target="_blank "
                   >
-                    <img src={process.env.PUBLIC_URL + "/assets/icons/github2.png"} alt="" />
+                    <img
+                      src={process.env.PUBLIC_URL + "/assets/icons/github2.png"}
+                      alt=""
+                    />
                   </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>        
+        </div>
         <div className="project-item">
           <div className="container">
             <h3 className="text-centered">Data Lovers</h3>
             <div className="grid">
               <div>
-              <p>Aplicación para el manejo de datos, visualización de gráficas y tablas de información.
-              
-              Los usuarios pueden visualizar la data de Personas heridas por medio de transporte en EEUU, seleccionando el tipo de transporte y el período. La aplicación les mostrará como resultado de su solicitud, la data representada en una <strong>Gráfica de Pie 3D y una lineal, así como la tabla correspondiente a los datos.</strong>
-              </p>
+                <p>
+                  Aplicación para el manejo de datos, visualización de gráficas
+                  y tablas de información. Los usuarios pueden visualizar la
+                  data de Personas heridas por medio de transporte en EEUU,
+                  seleccionando el tipo de transporte y el período. La
+                  aplicación les mostrará como resultado de su solicitud, la
+                  data representada en una{" "}
+                  <strong>
+                    Gráfica de Pie 3D y una lineal, así como la tabla
+                    correspondiente a los datos.
+                  </strong>
+                </p>
                 <div className="project-objectives">
                   <h4 className="is-green">Objetivos:</h4>
                   <ol>
                     <li>
-                      Diseñar y construir una interfaz web donde se pueda visualizar y manipular data.
+                      Diseñar y construir una interfaz web donde se pueda
+                      visualizar y manipular data.
                     </li>
                     <li>
-                      Permitir al usuario interactuar con la interfaz para obtener la información que necesita.
+                      Permitir al usuario interactuar con la interfaz para
+                      obtener la información que necesita.
                     </li>
                   </ol>
                 </div>
-                
+
                 <div className="project-results">
                   <h4 className="is-green">Resultados:</h4>
                   <ol>
-                    <li>
-                      La interacción del usuario con la interfaz
-                    </li>
+                    <li>La interacción del usuario con la interfaz</li>
                     <li>
                       Filtrar la informacion por tipo de transporte y periodo.
                     </li>
                     <li>
-                      Visualizar la solicitud del usuario en forma de gráficas así como la tabla correspondiente a la data.
+                      Visualizar la solicitud del usuario en forma de gráficas
+                      así como la tabla correspondiente a la data.
                     </li>
                   </ol>
                 </div>
                 <div className="project-tech">
                   <h4>Tech:</h4>
                   <div className="project-tech-list">
-                   Figma, HTML5, CSS3, JavaScript y Google Charts.
+                    Figma, HTML5, CSS3, JavaScript y Google Charts.
                   </div>
                 </div>
                 <div className="project-links">
@@ -254,13 +286,19 @@ const Projects = () => {
                     href="https://esthermanrique.github.io/CDMX009-Data-Lovers/src/"
                     target="_blank "
                   >
-                    <img src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"} alt="" />
+                    <img
+                      src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"}
+                      alt=""
+                    />
                   </a>
                   <a
                     href="https://github.com/EstherManrique/CDMX009-Data-Lovers"
                     target="_blank "
                   >
-                    <img src={process.env.PUBLIC_URL + "/assets/icons/github2.png"} alt="" />
+                    <img
+                      src={process.env.PUBLIC_URL + "/assets/icons/github2.png"}
+                      alt=""
+                    />
                   </a>
                 </div>
               </div>
@@ -269,7 +307,10 @@ const Projects = () => {
                   href="https://esthermanrique.github.io/CDMX009-Data-Lovers/src/"
                   target="_blank "
                 >
-                  <img src={process.env.PUBLIC_URL + "/assets/images/laptop2.png"} alt="" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/assets/images/laptop2.png"}
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
@@ -284,30 +325,40 @@ const Projects = () => {
                   href="https://esthermanrique.github.io/CDMX009-cipher/src/"
                   target="_blank "
                 >
-                  <img src={process.env.PUBLIC_URL + "/assets/images/macbookpro.png"} alt="" />
+                  <img
+                    src={
+                      process.env.PUBLIC_URL + "/assets/images/macbookpro.png"
+                    }
+                    alt=""
+                  />
                 </a>
               </div>
               <div>
-              <p>Aplicación para la generación de sellos digitales y facturación electrónica. Mediante el cifrado y descifrado de clabes.
-              Los usuarios son  los Contribuyentes (Personas físicas y morales), que pagan impuestos y facturan sus productos y/o servicios.
-              Con esta aplicación y por medio de un despacho de contadores, obtener ante la SHCP la autorización para la generación de sellos digitales que incluye la facturación electrónica. 
-              </p>
+                <p>
+                  Aplicación para la generación de sellos digitales y
+                  facturación electrónica. Mediante el cifrado y descifrado de
+                  clabes. Los usuarios son los Contribuyentes (Personas físicas
+                  y morales), que pagan impuestos y facturan sus productos y/o
+                  servicios. Con esta aplicación y por medio de un despacho de
+                  contadores, obtener ante la SHCP la autorización para la
+                  generación de sellos digitales que incluye la facturación
+                  electrónica.
+                </p>
                 <div className="project-objectives">
                   <h4 className="is-green">Objetivos:</h4>
                   <ol>
                     <li>
                       Crear una interfaz para registro y alta de usuarios.
                     </li>
-                    <li>
-                      Cifrado de plabara clabe.
-                    </li>
+                    <li>Cifrado de plabara clabe.</li>
                   </ol>
-                </div>                
+                </div>
                 <div className="project-results">
                   <h4 className="is-green">Resultados:</h4>
                   <ol>
                     <li>
-                      Generacion de clabes mediante Cifrado Cesar (Caesar Cipher).
+                      Generacion de clabes mediante Cifrado Cesar (Caesar
+                      Cipher).
                     </li>
                   </ol>
                 </div>
@@ -322,13 +373,19 @@ const Projects = () => {
                     href="https://esthermanrique.github.io/CDMX009-cipher/src/"
                     target="_blank "
                   >
-                    <img src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"} alt="" />
+                    <img
+                      src={process.env.PUBLIC_URL + "/assets/icons/enlace2.png"}
+                      alt=""
+                    />
                   </a>
                   <a
                     href="https://github.com/EstherManrique/CDMX009-cipher"
                     target="_blank "
                   >
-                    <img src={process.env.PUBLIC_URL + "/assets/icons/github2.png"} alt="" />
+                    <img
+                      src={process.env.PUBLIC_URL + "/assets/icons/github2.png"}
+                      alt=""
+                    />
                   </a>
                 </div>
               </div>

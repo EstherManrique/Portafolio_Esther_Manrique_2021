@@ -37,11 +37,11 @@ const TechSkills = () => {
     },
     {
       name: "SASS",
-      percentaje: 25,
+      percentaje: 50,
     },
     {
       name: "Git/Git-Hub",
-      percentaje: 60,
+      percentaje: 65,
     },
     {
       name: "Figma",
